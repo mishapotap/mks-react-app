@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+.spaceship {
+    width: 114px;
+    height: 64px;
+}
+
+.inside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}

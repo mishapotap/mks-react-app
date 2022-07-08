@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 90px;
+    cursor: pointer;
+    position: relative;
+}
+.wrapper:hover  {
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.text {
+    position: absolute;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
