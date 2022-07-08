@@ -1,8 +1,8 @@
 import Paragraph from "./Paragraph/Paragraph";
 import Heading from "./Heading/Heading";
-import ModalImage from "./ModalImage/ModalImage";
+import ModalSlider from "./ModalSlider/ModalSlider";
 
 
 export default {
-	base: [Paragraph, Heading, ModalImage],
+	base: [Paragraph, Heading, ModalSlider],
 };

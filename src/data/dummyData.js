@@ -3,7 +3,7 @@ const mksAboutInfo = {
 	name: "Международная космическая станция",
 	slider: [
 		{
-			slug: "modalImage",
+			slug: "modalSlider",
 			value: [
 				{ id: 1, image: require("../images/MksModal/main/modal-01.png")},
 				{ id: 2, image: require("../images/MksModal/main/modal-02.png")},

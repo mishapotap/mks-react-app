@@ -4,6 +4,12 @@ import {SquareButton, CircleButton, Header, ScreenTitle, Layout, Modal} from './
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
+  // new
+  const [aboutContent, setAboutContent] = useState(false);
+  const [structureContent, setStructureContent] = useState(false);
+  const [videoContent, setVideoContent] = useState(false);
+  const [structureId, setStructureId] = useState("");
+  const [structureContentItem, setStructureContentItem] = useState(false);
   return (
       <Layout>
         <div style={{position: 'absolute', top: '20px', left: '387px'}}>
@@ -13,10 +19,10 @@ function App() {
           <ScreenTitle span={"«МКС»"} text={" — пилотируемая орбитальная станция, используемая как многоцелевой космический исследовательский комплекс"}/>
         </div>
         <div style={{position: 'absolute', top: '154px', left: '57px'}}>
-          <SquareButton buttonText={"О МКС"} onClickHandler={() => setModalVisible(true)}/>
+          <SquareButton buttonText={"О МКС"} onClickHandler={() => {setAboutContent(true); setModalVisible(true)}}/>
         </div>
         <div style={{position: 'absolute', top: '271px', left: '57px'}}>
-          <SquareButton buttonText={"Состав МКС"} onClickHandler={() => {console.log("Нажата")}}/>
+          <SquareButton buttonText={"Состав МКС"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
         </div>
         <div style={{position: 'absolute', top: '154px', right: '57px'}}>
           <SquareButton buttonText={"Космические исследования"} onClickHandler={() => {console.log("Нажата")}}/>
@@ -38,7 +44,7 @@ function App() {
             <iframe style={{width: '100%', height: '100%'}} src="http://mks.avt.promo/ISS/ISS.html" frameBorder="0"></iframe>
           </div>
         </div> */}
-        <Modal modalVisible={modalVisible} setModalVisible={setModalVisible}/>
+        <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent}/>
       </Layout>
   );
 }
