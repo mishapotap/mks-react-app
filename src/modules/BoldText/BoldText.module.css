@@ -1,0 +1,11 @@
+.text {
+    margin-bottom: 25px;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}

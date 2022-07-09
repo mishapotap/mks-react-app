@@ -1,0 +1,45 @@
+.wrapper {
+    margin-bottom: 25px;
+}
+
+.title {
+    margin-bottom: 25px;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number {
+    flex: 1;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: #3C70BE;
+}
+
+.name {
+    flex: 15;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}

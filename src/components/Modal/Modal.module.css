@@ -47,6 +47,34 @@
     justify-content: space-between;
 }
 
+.aboutContent {
+    position: absolute;
+    width: 1300px;
+    height: 700px;
+    background-color: yellow;
+}
+
+.aboutText {
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.aboutNumber {
+    position: absolute;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    color: #0066FF;
+}
+
 .contentSlider {
     width: 47%;
     height: 100%;
@@ -57,4 +85,17 @@
     width: 47%;
     height: 100%;
     overflow-y: auto;
+}
+
+.moduleTitle {
+    margin-bottom: 25px;
+    background-color: red;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #3C70BE;
 }

@@ -8,8 +8,6 @@ function App() {
   const [aboutContent, setAboutContent] = useState(false);
   const [structureContent, setStructureContent] = useState(false);
   const [videoContent, setVideoContent] = useState(false);
-  const [structureId, setStructureId] = useState("");
-  const [structureContentItem, setStructureContentItem] = useState(false);
   return (
       <Layout>
         <div style={{position: 'absolute', top: '20px', left: '387px'}}>
@@ -28,7 +26,7 @@ function App() {
           <SquareButton buttonText={"Космические исследования"} onClickHandler={() => {console.log("Нажата")}}/>
         </div>
         <div style={{position: 'absolute', top: '271px', right: '57px'}}>
-          <SquareButton buttonText={"Видео"} onClickHandler={() => {console.log("Нажата")}}/>
+          <SquareButton buttonText={"Видео"} onClickHandler={() => {setVideoContent(true); setModalVisible(true)}}/>
         </div>
         <div style={{position: 'absolute', bottom: '88px', left: '75px'}}>
           <CircleButton buttonText={"МКС"} onClickHandler={() => {console.log("Нажата")}}/>
@@ -44,7 +42,7 @@ function App() {
             <iframe style={{width: '100%', height: '100%'}} src="http://mks.avt.promo/ISS/ISS.html" frameBorder="0"></iframe>
           </div>
         </div> */}
-        <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent}/>
+        <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent} videoContent={videoContent} setVideoContent={setVideoContent}/>
       </Layout>
   );
 }

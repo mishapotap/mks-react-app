@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.column {
+    width: 50%;
+}
+
+.text {
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.textBlue {
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.07em;
+    color: #3C70BE;
+}
