@@ -51,7 +51,6 @@
     position: absolute;
     width: 1300px;
     height: 700px;
-    background-color: yellow;
 }
 
 .aboutText {
@@ -63,6 +62,24 @@
     letter-spacing: 0.07em;
     color: #FFFFFF;
 }
+
+
+.structureItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 5%;
+    width: 45%;
+    float: left;
+    cursor: pointer;
+}
+
+.structureItem:hover .aboutText {
+    transition: all 0.3s;
+    font-size: 18px;
+}
+
 
 .aboutNumber {
     position: absolute;
@@ -89,7 +106,6 @@
 
 .moduleTitle {
     margin-bottom: 25px;
-    background-color: red;
     /* text */
     font-family: 'Montserrat';
     font-style: normal;
@@ -98,4 +114,15 @@
     line-height: 32px;
     letter-spacing: 0.05em;
     color: #3C70BE;
+}
+
+.videoWrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background-color: yellow;
+    object-fit: fill;
 }
