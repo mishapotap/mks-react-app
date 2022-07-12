@@ -5,9 +5,8 @@ import { ModalBg } from "../../images";
 import { dummyData } from "../../data";
 import { ContentModule } from "../../content";
 import modules from "../../modules";
-import video1 from "../../video/main.mp4";
 
-const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, structureContent, setStructureContent, videoContent, setVideoContent }) => {
+const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, structureContent, setStructureContent }) => {
     const [structureId, setStructureId] = useState("");
     const [structureContentItem, setStructureContentItem] = useState(false);
 
@@ -77,23 +76,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                             </>
                         )}
                     </>
-                // Видео
-                ) : videoContent ? (
-                    <>
-                        <div className={styles.closeButton} onClick={() => {setVideoContent(false); setModalVisible(false)}}>
-                            <ModalCloseButton />
-                        </div>
-                        {/* <div className={styles.videoWrapper}> */}
-                        <video className={styles.videoWrapper} controls="controls" autoPlay>
-                            <source src={video1} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-                        </video>
-                            {/* <video src="../../video/main.mp4" autoPlay controls="controls" style={{width: '100%', height: '100%'}}></video> */}
-                        {/* </div> */}
-                        {/* <video width="1920" height="1080" controls="controls" autoPlay>
-                            <source src={video1} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-                        </video> */}
-                    </>
-                ) : null }
+                ) : null  }
 			</div>
 		</div>
 	);

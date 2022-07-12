@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-evenly;
     
-    width: 1145px;
+    /* width: 1145px; */
+    width: 60vw;
 }
 .text {
     /* text */

@@ -48,7 +48,7 @@ const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutCon
                                             <ContentModule key={index} data={item} modules={modules.base}/>
                                         ))}
                                     </div>
-                                    <div className={styles.contentText}>
+                                    <div className={styles.contentTextCentered}>
                                         {dummyData.scienceStructure[structureId].content.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
                                         ))}
