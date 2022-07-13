@@ -29,7 +29,7 @@ const Science = () => {
           <div style={{position: 'absolute', top: '110px', right: '0'}}>
             <SquareButton buttonText={"Видео"} onClickHandler={() => setVideoContent(true)}/>
           </div>
-          <Link to={"/mks"}>
+          <Link to={"/"}>
               <div style={{position: 'absolute', bottom: '0', left: '20px'}}>
               <CircleButton buttonText={"МКС"} onClickHandler={() => {console.log("На МКС")}} active={true}/>
               </div>

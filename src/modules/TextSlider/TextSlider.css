@@ -1,0 +1,68 @@
+/* navigation */
+#swiper-prev {
+    position: absolute;
+    bottom: 15px;
+    top: auto;
+    right: 196px;
+    cursor: pointer;
+    width: 31px;
+    height: 36px;
+    z-index: 15;
+}
+
+.swiper-prev::after {
+    display: none;
+}
+
+#swiper-next {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    top: auto;
+    cursor: pointer;
+    width: 31px;
+    height: 36px;
+    transform: rotate(180deg);
+    z-index: 15;
+}
+
+.swiper-next::after {
+    display: none;
+}
+
+/* pagination */
+#textSwiper .swiper-pagination-fraction {
+    width: 65px;
+    height: 65px;
+    background: rgba(60, 112, 190, 0.14);
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position */
+    right: 81px;
+    bottom: 0;
+    left: auto;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+#textSwiper .swiper-pagination-current {
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #0066FF;
+}

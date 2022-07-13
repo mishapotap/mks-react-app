@@ -7,7 +7,7 @@ function App() {
 		<React.StrictMode>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/mks" element={<Mks />}>
+					<Route path="/" element={<Mks />}>
 						{/* <Route index element={<Home />} />
           <Route path="teams" element={<Teams />}>
             <Route path=":teamId" element={<Team />} />
