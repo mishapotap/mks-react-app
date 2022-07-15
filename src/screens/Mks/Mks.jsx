@@ -2,6 +2,7 @@ import React, {useState } from 'react';
 import { SoundButtonSvg } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, Modal, Video} from '../../components';
 import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 const Mks = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -11,11 +12,13 @@ const Mks = () => {
   const [videoContent, setVideoContent] = useState(false);
   return (
     <>
+      <Helmet>
+        <title>«МКС» — пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс</title>
+      </Helmet>
       <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent} />
       <Layout videoContent={videoContent} setVideoContent={setVideoContent}>
-        {/* <Video videoContent={videoContent} setVideoContent={setVideoContent}/> */}
         <div style={{position: 'absolute', top: '-4.5vh', left: '12.5vw'}}>
-          <ScreenTitle span={"«МКС»"} text={" — пилотируемая орбитальная станция, используемая как многоцелевой космический исследовательский комплекс"}/>
+          <ScreenTitle span={"«МКС»"} text={" - пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс"}/>
         </div>
         <div style={{position: 'absolute', top: '0', left: '0'}}>
           <SquareButton buttonText={"О МКС"} onClickHandler={() => {setAboutContent(true); setModalVisible(true)}}/>
@@ -41,11 +44,8 @@ const Mks = () => {
           <SoundButtonSvg/>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%'}}>
-          <div style={{width: '85%', height: '100%'}}>
-            <iframe style={{width: '100%', height: '100%'}} src="https://ate2.avt.promo/ISS.html" frameBorder="0"></iframe>
-          </div>
+            <iframe id="myIframe" style={{width: '100%', height: '100%'}} src="https://ate2.avt.promo/model/ISS.html" frameBorder="0"></iframe>
         </div>
-        {/* <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent} /> */}
       </Layout>
     </>
   );

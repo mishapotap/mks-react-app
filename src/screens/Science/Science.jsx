@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { SoundButtonSvg } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, ModalScience, Video} from '../../components';
 import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 const Science = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -11,9 +12,11 @@ const Science = () => {
   const [videoContent, setVideoContent] = useState(false);
   return (
       <>
+        <Helmet>
+          <title>«Наука» — многоцелевой лабораторный модуль российского сегмента МКС</title>
+        </Helmet>
         <ModalScience modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent}/>
         <Layout videoContent={videoContent} setVideoContent={setVideoContent}>
-          {/* <Video videoContent={videoContent} setVideoContent={setVideoContent}/> */}
           <div style={{position: 'absolute', top: '-4.5vh', left: '12.5vw'}}>
             <ScreenTitle span={"«Наука»"} text={" — многоцелевой лабораторный модуль российского сегмента МКС"}/>
           </div>
@@ -41,11 +44,8 @@ const Science = () => {
             <SoundButtonSvg/>
           </div>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%'}}>
-            <div style={{width: '85%', height: '100%'}}>
-              <iframe style={{width: '100%', height: '100%'}} src="https://ate2.avt.promo/ISS.html" frameBorder="0"></iframe>
-            </div>
+            <iframe id="myIframe" style={{width: '100%', height: '100%'}} src="https://ate2.avt.promo/modelscience/NAUKA.html" frameBorder="0"></iframe>
           </div>
-          {/* <ModalScience modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent}/> */}
         </Layout>
       </>
   );

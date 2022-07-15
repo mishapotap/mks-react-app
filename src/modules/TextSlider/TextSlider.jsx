@@ -17,10 +17,9 @@ const TextSlider = ({ data }) => {
 		<>
 			<Swiper
 				id="textSwiper"
-				direction={"vertical"}
+				direction={"horizontal"}
 				speed={800}
 				pagination={{
-					// el: ".swiper-pagi",
 				  	type: "fraction",
 				}}
 				navigation={{
@@ -41,7 +40,6 @@ const TextSlider = ({ data }) => {
 			<div id="swiper-prev" className="swiper-prev">
 				<SliderPrevButton />
 			</div>
-			{/* <div className="swiper-pagi"></div> */}
 			<div id="swiper-next" className="swiper-next">
 				<SliderPrevButton />
 			</div>

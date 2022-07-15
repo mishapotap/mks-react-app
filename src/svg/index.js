@@ -8,3 +8,4 @@ export { default as ModalCloseButton } from './ModalCloseButton';
 export { default as SliderPrevButton } from './SliderPrevButton';
 export { default as MKSStructureCircle } from './MKSStructureCircle';
 export { default as LayoutBg } from './LayoutBg';
+export { default as AnimRightBottom } from './AnimRightBottom';

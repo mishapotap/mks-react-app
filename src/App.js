@@ -7,15 +7,8 @@ function App() {
 		<React.StrictMode>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<Mks />}>
-						{/* <Route index element={<Home />} />
-          <Route path="teams" element={<Teams />}>
-            <Route path=":teamId" element={<Team />} />
-            <Route path="new" element={<NewTeamForm />} />
-            <Route index element={<LeagueStandings />} />
-          </Route> */}
-					</Route>
-          <Route path="/science" element={<Science />} />
+					<Route path="/" element={<Mks />} />
+          			<Route path="/science" element={<Science />} />
 				</Routes>
 			</BrowserRouter>
 		</React.StrictMode>

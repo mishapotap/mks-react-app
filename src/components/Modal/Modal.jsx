@@ -10,6 +10,22 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
     const [structureId, setStructureId] = useState("");
     const [structureContentItem, setStructureContentItem] = useState(false);
 
+    window.addEventListener("message", receiveMessage, false);
+    function receiveMessage(event)  {
+      if(event.origin !== 'https://ate2.avt.promo') {
+          console.log('URL issues');
+          return;
+      } else {
+          let myMsg = event.data;
+          if (myMsg <= 17) {
+            setStructureId(myMsg - 1);
+            setStructureContent(true);
+            setStructureContentItem(true);
+            setModalVisible(true);
+          }
+      }           
+    }
+
     return (
 		<div className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
 			<div className={styles.container}>

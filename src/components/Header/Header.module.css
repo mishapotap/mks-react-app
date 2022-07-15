@@ -5,9 +5,19 @@
     justify-content: space-evenly;
     
     /* width: 1145px; */
-    width: 60vw;
+    /* width: 60vw; */
+    width: fit-content;
+}
+.orbital {
+    cursor: pointer;
+    margin-right: 2vw;
+}
+.roscosmos {
+    cursor: pointer;
+    margin-right: 2vw;
 }
 .text {
+    margin-right: 2vw;
     /* text */
     font-family: 'Montserrat';
     font-style: normal;
