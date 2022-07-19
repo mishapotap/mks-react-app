@@ -23,17 +23,6 @@
     /* z-index: -1; */
 }
 
-.container {
-    position: absolute;
-    top: auto;
-    left: auto;
-    background-color: #030d1d;
-    width: 93.75%;
-    height: 74%;
-    /* width: 1800px;
-    height: 800px; */
-}
-
 .buttonWrapper {
     position: absolute;
     bottom: 3.5%;

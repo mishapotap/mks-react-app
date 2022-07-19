@@ -42,16 +42,17 @@
 
 .closeButton {
     position: absolute;
-    top: 47px;
-    /* top: 2.3%; */
-    right: 23px;
-    /* right: 1.15%; */
+    top: 30px;
+    right: 30px;
     cursor: pointer;
+}
+.closeButton svg{
+    transition: all 0.3s;
 }
 
 .closeButton:hover svg {
     transition: all 0.3s;
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 .content {
@@ -90,6 +91,10 @@
     width: 45%;
     float: left;
     cursor: pointer;
+}
+
+.structureItem .aboutText {
+    transition: all 0.3s;
 }
 
 .structureItem:hover .aboutText {

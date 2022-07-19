@@ -16,7 +16,7 @@ const Layout = ({ children, videoContent, setVideoContent, science }) => {
 			<div className={styles.layoutBg}>
 				<LayoutBg />
 			</div>
-			<div className={styles.container}>{children}</div>
+			{children}
 			{science && (
 				<div className={styles.buttonWrapper}>
 					<SquareButton withImage={true} image={SpaceshipLeft} width={94} height={39} buttonText={"Вид слева"} onClickHandler={() => document.getElementById('myIframe').contentWindow.postMessage("left", "*")}/>

@@ -1,0 +1,24 @@
+.soundButton {
+    position: absolute;
+    bottom: 24%;
+    right: calc(4% + 32.5px);
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.soundButton:hover {
+    transition: all 0.3s;
+    transform: scale(1.15);
+}
+
+.iframeContainer {
+    position: absolute;
+    top: auto;
+    left: auto;
+    background-color: #030d1d;
+    width: 93.75%;
+    height: 74%;
+    /* width: 1800px;
+    height: 800px; */
+}

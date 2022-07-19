@@ -5,6 +5,7 @@
     width: 128px;
     height: 128px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .spaceship {
     width: 114px;
@@ -27,4 +28,9 @@
     text-align: center;
     letter-spacing: 0.07em;
     color: #FFFFFF;
+}
+
+.wrapper:hover {
+    transition: all 0.3s;
+    transform: scale(1.15);
 }
