@@ -17,7 +17,7 @@ const Mks = () => {
       </Helmet>
       <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent} />
       <Layout videoContent={videoContent} setVideoContent={setVideoContent}>
-        <div style={{position: 'absolute', top: '-4.5vh', left: '12.5vw'}}>
+        <div style={{position: 'absolute', top: '-3.6vh', left: '12.5vw'}}>
           <ScreenTitle span={"«МКС»"} text={" - пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс"}/>
         </div>
         <div style={{position: 'absolute', top: '0', left: '0'}}>

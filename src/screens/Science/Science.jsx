@@ -16,15 +16,15 @@ const Science = () => {
           <title>«Наука» — многоцелевой лабораторный модуль российского сегмента МКС</title>
         </Helmet>
         <ModalScience modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent}/>
-        <Layout videoContent={videoContent} setVideoContent={setVideoContent}>
-          <div style={{position: 'absolute', top: '-4.5vh', left: '12.5vw'}}>
+        <Layout science={true} videoContent={videoContent} setVideoContent={setVideoContent}>
+          <div style={{position: 'absolute', top: '-3.6vh', left: '12.5vw'}}>
             <ScreenTitle span={"«Наука»"} text={" — многоцелевой лабораторный модуль российского сегмента МКС"}/>
           </div>
           <div style={{position: 'absolute', top: '0', left: '0'}}>
-            <SquareButton buttonText={"О МКС"} onClickHandler={() => {setAboutContent(true); setModalVisible(true)}}/>
+            <SquareButton buttonText={"О Науке"} onClickHandler={() => {setAboutContent(true); setModalVisible(true)}}/>
           </div>
           <div style={{position: 'absolute', top: '110px', left: '0'}}>
-            <SquareButton buttonText={"Состав МКС"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
+            <SquareButton buttonText={"Состав модуля"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
           </div>
           <div style={{position: 'absolute', top: '0', right: '0'}}>
             <SquareButton buttonText={"Космические исследования"} onClickHandler={() => window.location.href = "https://agat.avt.promo/kosmicheskie-issledovaniya/"}/>

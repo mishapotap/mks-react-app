@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Mks, Science } from "./screens";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+
+	
 	return (
 		<React.StrictMode>
 			<BrowserRouter>

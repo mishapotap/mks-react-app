@@ -32,3 +32,12 @@
     /* 1800 x 800 */
     /* background: url('../../images/layout_bg.png') center/contain no-repeat; */
 }
+
+.buttonWrapper {
+    position: absolute;
+    bottom: 3.5vh;
+    left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 26vw;
+}
