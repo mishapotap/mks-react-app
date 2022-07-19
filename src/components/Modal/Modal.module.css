@@ -27,10 +27,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 1736px;
-    height: 860px; */
-    width: 90.4%;
-    height: 79.6%;
+    width: 1736px;
+    height: 860px;
+    /* width: 90.4%;
+    height: 79.6%; */
     position: relative;
     animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -42,10 +42,10 @@
 
 .closeButton {
     position: absolute;
-    /* top: 47px; */
-    top: 2.3%;
-    /* right: 23px; */
-    right: 1.15%;
+    top: 47px;
+    /* top: 2.3%; */
+    right: 23px;
+    /* right: 1.15%; */
     cursor: pointer;
 }
 
@@ -118,7 +118,7 @@
 .contentText {
     width: 47%;
     height: 100%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .moduleTitle {
