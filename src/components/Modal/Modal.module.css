@@ -18,8 +18,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    /* width: 100vw;
-    height: 100vh; */
     width: 100%;
     height: 100%;
     z-index: 10;
@@ -29,8 +27,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1736px;
-    height: 860px;
+    /* width: 1736px;
+    height: 860px; */
+    width: 90.4%;
+    height: 79.6%;
     position: relative;
     animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -42,8 +42,10 @@
 
 .closeButton {
     position: absolute;
-    top: 47px;
-    right: 23px;
+    /* top: 47px; */
+    top: 2.3%;
+    /* right: 23px; */
+    right: 1.15%;
     cursor: pointer;
 }
 

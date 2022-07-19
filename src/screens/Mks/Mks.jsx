@@ -16,36 +16,36 @@ const Mks = () => {
         <title>«МКС» — пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс</title>
       </Helmet>
       <Modal modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent} />
+      <div style={{position: 'absolute', top: '9.5%', left: '13%', zIndex: 1}}>
+        <ScreenTitle span={"«МКС»"} text={" - пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс"}/>
+      </div>
+      <div style={{position: 'absolute', top: '15%', left: '3%', zIndex: 1}}>
+        <SquareButton buttonText={"О МКС"} onClickHandler={() => {setAboutContent(true); setModalVisible(true)}}/>
+      </div>
+      <div style={{position: 'absolute', top: '27%', left: '3%', zIndex: 1}}>
+        <SquareButton buttonText={"Состав МКС"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
+      </div>
+      <div style={{position: 'absolute', top: '15%', right: '3%', zIndex: 1}}>
+        <SquareButton buttonText={"Космические исследования"} onClickHandler={() => window.location.href = "https://agat.avt.promo/kosmicheskie-issledovaniya/"}/>
+      </div>
+      <div style={{position: 'absolute', top: '27%', right: '3%', zIndex: 1}}>
+        <SquareButton buttonText={"Видео"} onClickHandler={() => setVideoContent(true)}/>
+      </div>
+      <div style={{position: 'absolute', bottom: '8.5%', left: '4%', zIndex: 1}}>
+        <CircleButton buttonText={"МКС"}/>
+      </div>
+      <Link to={"/science"}>
+          <div style={{position: 'absolute', bottom: '8.5%', right: '4%', zIndex: 1}}>
+          <CircleButton buttonText={"Наука"} onClickHandler={() => {console.log("На Наука")}} active={true}/>
+          </div>
+      </Link>
+      <div style={{position: 'absolute', bottom: '24%', right: 'calc(4% + 32.5px)', zIndex: 1, cursor: 'pointer'}} onClick={() => {console.log("Нажата звук")}}>
+        <SoundButtonSvg/>
+      </div>
       <Layout videoContent={videoContent} setVideoContent={setVideoContent}>
-        <div style={{position: 'absolute', top: '-3.6vh', left: '12.5vw'}}>
-          <ScreenTitle span={"«МКС»"} text={" - пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс"}/>
-        </div>
-        <div style={{position: 'absolute', top: '0', left: '0'}}>
-          <SquareButton buttonText={"О МКС"} onClickHandler={() => {setAboutContent(true); setModalVisible(true)}}/>
-        </div>
-        <div style={{position: 'absolute', top: '110px', left: '0'}}>
-          <SquareButton buttonText={"Состав МКС"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
-        </div>
-        <div style={{position: 'absolute', top: '0', right: '0'}}>
-          <SquareButton buttonText={"Космические исследования"} onClickHandler={() => window.location.href = "https://agat.avt.promo/kosmicheskie-issledovaniya/"}/>
-        </div>
-        <div style={{position: 'absolute', top: '110px', right: '0'}}>
-          <SquareButton buttonText={"Видео"} onClickHandler={() => setVideoContent(true)}/>
-        </div>
-        <div style={{position: 'absolute', bottom: '0', left: '20px'}}>
-          <CircleButton buttonText={"МКС"}/>
-        </div>
-        <Link to={"/science"}>
-            <div style={{position: 'absolute', bottom: '0', right: '20px'}}>
-            <CircleButton buttonText={"Наука"} onClickHandler={() => {console.log("На Наука")}} active={true}/>
-            </div>
-        </Link>
-        <div style={{position: 'absolute', bottom: '158px', left: '52px'}} onClick={() => {console.log("Нажата звук")}}>
-          <SoundButtonSvg/>
-        </div>
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%'}}>
+        {/* <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%'}}> */}
             <iframe id="myIframe" style={{width: '100%', height: '100%'}} src="https://ate2.avt.promo/model/ISS.html" frameBorder="0"></iframe>
-        </div>
+        {/* </div> */}
       </Layout>
     </>
   );
