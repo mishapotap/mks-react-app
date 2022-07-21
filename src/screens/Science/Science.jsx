@@ -51,9 +51,9 @@ const Science = () => {
           <div className={styles.scienceButton}>
             <CircleButton buttonText={"Наука"}/>
           </div>
-          <div className={styles.soundButton} onClick={() => {console.log("Нажата звук")}}>
+          {/* <div className={styles.soundButton} onClick={() => {console.log("Нажата звук")}}>
             <SoundButtonSvg/>
-          </div>
+          </div> */}
           <div className={styles.iframeContainer}>
             <iframe id="myIframe" src="https://ate2.avt.promo/modelscience/NAUKA.html" frameBorder="0"></iframe>
           </div>

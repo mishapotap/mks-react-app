@@ -1,17 +1,3 @@
-.soundButton {
-    position: absolute;
-    bottom: 24%;
-    right: calc(4% + 32.5px);
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.soundButton:hover {
-    transition: all 0.3s;
-    transform: scale(1.15);
-}
-
 .screenTitle {
     position: absolute;
     top: 9.5%;

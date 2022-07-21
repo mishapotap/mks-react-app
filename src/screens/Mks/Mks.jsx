@@ -1,32 +1,32 @@
 import React, {useState, useEffect } from 'react';
-import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
+// import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, Modal} from '../../components';
 import { Link } from "react-router-dom";
 import {Helmet} from "react-helmet";
 import styles from "./Mks.module.css";
 
-// bg audio
-const useAudio = url => {
-  const [audio] = useState(new Audio(url));
-  const [playing, setPlaying] = useState(false);
+// // bg audio
+// const useAudio = url => {
+//   const [audio] = useState(new Audio(url));
+//   const [playing, setPlaying] = useState(false);
 
-  const toggle = () => setPlaying(!playing);
+//   const toggle = () => setPlaying(!playing);
 
-  useEffect(() => {
-      playing ? audio.play() : audio.pause();
-    },
-    [playing]
-  );
+//   useEffect(() => {
+//       playing ? audio.play() : audio.pause();
+//     },
+//     [playing]
+//   );
 
-  useEffect(() => {
-    audio.addEventListener('ended', () => setPlaying(false));
-    return () => {
-      audio.removeEventListener('ended', () => setPlaying(false));
-    };
-  }, []);
+//   useEffect(() => {
+//     audio.addEventListener('ended', () => setPlaying(false));
+//     return () => {
+//       audio.removeEventListener('ended', () => setPlaying(false));
+//     };
+//   }, []);
 
-  return [playing, toggle];
-};
+//   return [playing, toggle];
+// };
 
 const Mks = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -44,7 +44,7 @@ const Mks = () => {
     modalAudio.play()
   }
   // bg audio
-  const [playing, toggle] = useAudio("/bg.mp3");
+  // const [playing, toggle] = useAudio("/bg.mp3");
   return (
     <>
       <Helmet>
@@ -76,9 +76,9 @@ const Mks = () => {
               <CircleButton buttonText={"Наука"} active={true}/>
             </div>
         </Link>
-        <div className={styles.soundButton} onClick={toggle}>
+        {/* <div className={styles.soundButton} onClick={toggle}>
           {playing ? <SoundButtonSvg/> : <SoundButtonDisabled/>}
-        </div>
+        </div> */}
         <div className={styles.iframeContainer}>
             <iframe id="myIframe" src="https://ate2.avt.promo/model/ISS.html" frameBorder="0"></iframe>
         </div>

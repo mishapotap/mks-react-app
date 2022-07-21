@@ -1,13 +1,44 @@
-import React from "react";
-import { AnimRightBottom, LayoutBg } from "../../svg";
+import React, {useState, useEffect} from "react";
+import { AnimRightBottom, LayoutBg, SoundButtonSvg, SoundButtonDisabled } from "../../svg";
 import {SquareButton} from "../../components";
 import styles from "./Layout.module.css";
 import { Header, Video } from '../../components';
 import { SpaceshipLeft, SpaceshipMiddle, SpaceshipRight } from '../../images'
 
+// bg audio
+const useAudio = url => {
+	const [audio] = useState(new Audio(url));
+	const [playing, setPlaying] = useState(false);
+
+	const toggle = () => setPlaying(!playing);
+
+	useEffect(() => {
+		playing ? audio.play() : audio.pause();
+	},
+	[playing]
+	);
+
+	// Музыка зациклена
+	useEffect(() => {
+		audio.addEventListener('ended', () => audio.play());
+		return () => {
+			audio.removeEventListener('ended', () => audio.play());
+		};
+	}, []);
+
+	// useEffect(() => {
+	// audio.addEventListener('ended', () => setPlaying(false));
+	// return () => {
+	// 	audio.removeEventListener('ended', () => setPlaying(false));
+	// };
+	// }, []);
+
+	return [playing, toggle];
+};
 
 const Layout = ({ children, videoContent, setVideoContent, science }) => {
 
+	const [playing, toggle] = useAudio("/bg.mp3");
 	// audio
 	let modalAudio = new Audio("/modal.mp3")
     const playModal = () => {
@@ -21,6 +52,9 @@ const Layout = ({ children, videoContent, setVideoContent, science }) => {
 			</div>
 			<div className={styles.layoutBg}>
 				<LayoutBg />
+			</div>
+			<div className={styles.soundButton} onClick={toggle}>
+				{playing ? <SoundButtonSvg/> : <SoundButtonDisabled/>}
 			</div>
 			{children}
 			{science && (
