@@ -1,5 +1,6 @@
 export { default as SquareButtonSvg } from './SquareButtonSvg';
 export { default as SoundButtonSvg } from './SoundButtonSvg';
+export { default as SoundButtonDisabled } from './SoundButtonDisabled';
 export { default as CircleButtonSvgWhite } from './CircleButtonSvgWhite';
 export { default as CircleButtonSvgBlue } from './CircleButtonSvgBlue';
 export { default as RoscosmosIcon } from './RoscosmosIcon';

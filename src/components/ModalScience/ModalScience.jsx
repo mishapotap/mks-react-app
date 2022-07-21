@@ -6,7 +6,7 @@ import { dummyData } from "../../data";
 import { ContentModule } from "../../content";
 import modules from "../../modules";
 
-const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, structureContent, setStructureContent, videoContent, setVideoContent }) => {
+const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, structureContent, setStructureContent }) => {
     const [structureId, setStructureId] = useState("");
     const [structureContentItem, setStructureContentItem] = useState(false);
 
@@ -26,14 +26,24 @@ const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutCon
       }           
     }
 
+    let buttonAudio = new Audio("/button.mp3")
+    let modalAudio = new Audio("/modal.mp3")
+    const playButton = () => {
+        buttonAudio.play()
+    }
+    const playModal = () => {
+        modalAudio.play()
+    }
+
     return (
 		<div className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
+            {modalVisible && playModal()}
 			<div className={styles.container}>
 				<img src={ModalBg} alt="#" className={styles.bgImage} />
                 {/* О МКС */}
 				{aboutContent ? (
                     <>
-                        <div className={styles.closeButton} onClick={() => {setAboutContent(false); setModalVisible(false)}}>
+                        <div className={styles.closeButton} onClick={() => {playButton(); setAboutContent(false); setModalVisible(false)}}>
                             <ModalCloseButton />
                         </div>
                         <div className={styles.content}>
@@ -55,7 +65,7 @@ const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutCon
                     <>
                         {structureContentItem ? (
                             <>
-                                <div className={styles.closeButton} onClick={() => {setStructureContent(false); setStructureContentItem(false); setModalVisible(false)}}>
+                                <div className={styles.closeButton} onClick={() => {playButton(); setStructureContent(false); setStructureContentItem(false); setModalVisible(false)}}>
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.content}>
@@ -73,11 +83,11 @@ const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutCon
                             </>
                         ) : (
                             <>
-                                <div className={styles.closeButton} onClick={() => {setStructureContent(false); setModalVisible(false)}}>
+                                <div className={styles.closeButton} onClick={() => {playButton(); setStructureContent(false); setModalVisible(false)}}>
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.aboutContent}>
-                                    <div className={styles.moduleTitle}>Состав МКС</div>
+                                    <div className={styles.moduleTitle}>Состав Науки</div>
                                         {dummyData.scienceStructure.map((item, index) => (
                                             <div key={item.id} className={styles.structureItem} onClick={() => {setStructureId(item.id - 1); setStructureContentItem(true);}}>
                                                 <div style={{display: 'flex', justifyContent: "center", alignItems: 'center', marginRight: '25px'}}>
@@ -93,15 +103,6 @@ const ModalScience = ({ modalVisible, setModalVisible, aboutContent, setAboutCon
                         )}
                     </>
                 // Видео
-                ) : videoContent ? (
-                    <>
-                        <div className={styles.closeButton} onClick={() => {setVideoContent(false); setModalVisible(false)}}>
-                            <ModalCloseButton />
-                        </div>
-                        <div className={styles.content}>
-                            Video
-                        </div>
-                    </>
                 ) : null }
 			</div>
 		</div>

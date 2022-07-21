@@ -26,14 +26,24 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
       }           
     }
 
+    let buttonAudio = new Audio("/button.mp3")
+    let modalAudio = new Audio("/modal.mp3")
+    const playButton = () => {
+        buttonAudio.play()
+    }
+    const playModal = () => {
+        modalAudio.play()
+    }
+
     return (
 		<div className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
+            {modalVisible && playModal()}
 			<div className={styles.container}>
 				<img src={ModalBg} alt="#" className={styles.bgImage} />
                 {/* О МКС */}
 				{aboutContent ? (
                     <>
-                        <div className={styles.closeButton} onClick={() => {setAboutContent(false); setModalVisible(false)}}>
+                        <div className={styles.closeButton} onClick={() => {playButton(); setAboutContent(false); setModalVisible(false)}}>
                             <ModalCloseButton />
                         </div>
                         <div className={styles.content}>
@@ -55,7 +65,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                     <>
                         {structureContentItem ? (
                             <>
-                                <div className={styles.closeButton} onClick={() => {setStructureContent(false); setStructureContentItem(false); setModalVisible(false)}}>
+                                <div className={styles.closeButton} onClick={() => {playButton(); setStructureContent(false); setStructureContentItem(false); setModalVisible(false)}}>
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.content}>
@@ -73,7 +83,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                             </>
                         ) : (
                             <>
-                                <div className={styles.closeButton} onClick={() => {setStructureContent(false); setModalVisible(false)}}>
+                                <div className={styles.closeButton} onClick={() => {playButton(); setStructureContent(false); setModalVisible(false)}}>
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.aboutContent}>

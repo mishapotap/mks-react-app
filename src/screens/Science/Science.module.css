@@ -12,6 +12,55 @@
     transform: scale(1.15);
 }
 
+.screenTitle {
+    position: absolute;
+    top: 9.5%;
+    left: 13%;
+    z-index: 1;
+}
+
+.aboutButton {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    z-index: 1;
+}
+
+.structureButton {
+    position: absolute;
+    top: 27%;
+    left: 3%;
+    z-index: 1;
+}
+
+.mksButton {
+    position: absolute;
+    bottom: 8.5%;
+    left: 4%;
+    z-index: 1;
+}
+
+.researchButton {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 1;
+}
+
+.videoButton {
+    position: absolute;
+    top: 27%;
+    right: 3%;
+    z-index: 1;
+}
+
+.scienceButton {
+    position: absolute;
+    bottom: 8.5%;
+    right: 4%;
+    z-index: 1;
+}
+
 .iframeContainer {
     position: absolute;
     top: auto;
@@ -22,3 +71,8 @@
     /* width: 1800px;
     height: 800px; */
 }
+
+.iframeContainer iframe{
+    width: 100%;
+    height: 100%;
+ }

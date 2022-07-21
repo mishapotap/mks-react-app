@@ -7,6 +7,12 @@ import { SpaceshipLeft, SpaceshipMiddle, SpaceshipRight } from '../../images'
 
 
 const Layout = ({ children, videoContent, setVideoContent, science }) => {
+
+	// audio
+	let modalAudio = new Audio("/modal.mp3")
+    const playModal = () => {
+        modalAudio.play()
+    }
 	return (
 		<div className={styles.wrapper}>
 			<Video videoContent={videoContent} setVideoContent={setVideoContent}/>
@@ -19,9 +25,9 @@ const Layout = ({ children, videoContent, setVideoContent, science }) => {
 			{children}
 			{science && (
 				<div className={styles.buttonWrapper}>
-					<SquareButton withImage={true} image={SpaceshipLeft} width={94} height={39} buttonText={"Вид слева"} onClickHandler={() => document.getElementById('myIframe').contentWindow.postMessage("left", "*")}/>
-					<SquareButton withImage={true} image={SpaceshipMiddle} width={96} height={48} buttonText={"Общий вид"} onClickHandler={() => document.getElementById('myIframe').contentWindow.postMessage("middle", "*")}/>
-					<SquareButton withImage={true} image={SpaceshipRight} width={94} height={39} buttonText={"Вид справа"} onClickHandler={() => document.getElementById('myIframe').contentWindow.postMessage("right", "*")}/>
+					<SquareButton withImage={true} image={SpaceshipLeft} width={94} height={39} buttonText={"Вид слева"} onClickHandler={() => {playModal(); document.getElementById('myIframe').contentWindow.postMessage("left", "*")}}/>
+					<SquareButton withImage={true} image={SpaceshipMiddle} width={96} height={48} buttonText={"Общий вид"} onClickHandler={() => {playModal(); document.getElementById('myIframe').contentWindow.postMessage("middle", "*")}}/>
+					<SquareButton withImage={true} image={SpaceshipRight} width={94} height={39} buttonText={"Вид справа"} onClickHandler={() => {playModal(); document.getElementById('myIframe').contentWindow.postMessage("right", "*")}}/>
 				</div>
 			)}
 			{/* <AnimRightBottom/> */}

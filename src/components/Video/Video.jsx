@@ -5,11 +5,15 @@ import video1 from "../../video/main.mp4";
 
 
 const Video = ({videoContent, setVideoContent}) => {
+    let buttonAudio = new Audio("/button.mp3")
+    const playButton = () => {
+        buttonAudio.play()
+    }
     return (
         <>
             {videoContent ? (
                 <>
-                    <div className={styles.closeButton} onClick={() => setVideoContent(false)}>
+                    <div className={styles.closeButton} onClick={() => {playButton(); setVideoContent(false)}}>
                         <ModalCloseButton />
                     </div>
                     <video className={styles.videoWrapper} controls="controls" autoPlay>
