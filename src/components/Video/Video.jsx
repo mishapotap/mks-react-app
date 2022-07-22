@@ -4,7 +4,7 @@ import {ModalCloseButton} from '../../svg'
 import video1 from "../../video/main.mp4";
 
 
-const Video = ({videoContent, setVideoContent}) => {
+const Video = ({videoContent, setVideoContent, scienceActive}) => {
     let buttonAudio = new Audio("/button.mp3")
     const playButton = () => {
         buttonAudio.play()
@@ -17,7 +17,7 @@ const Video = ({videoContent, setVideoContent}) => {
                         <ModalCloseButton />
                     </div>
                     <video className={styles.videoWrapper} controls="controls" autoPlay>
-                        <source src={video1} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+                        <source src={scienceActive ? video1 : video1} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
                     </video>
                 </>
             ) : null}

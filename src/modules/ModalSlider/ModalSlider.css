@@ -7,6 +7,11 @@
     width: 31px;
     height: 36px;
 }
+#swiper-button-prev:hover > svg > path{
+    transition: all 0.3s;
+    fill: #408cff;
+    stroke: #408cff;
+}
 
 .swiper-button-prev::after {
     display: none;
@@ -23,6 +28,12 @@
     transform: rotate(180deg);
 }
 
+#swiper-button-next:hover > svg > path{
+    transition: all 0.3s;
+    fill: #408cff;
+    stroke: #408cff;
+}
+
 .swiper-button-next::after {
     display: none;
 }
@@ -36,8 +47,8 @@
 #swiper .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background: rgba(60, 112, 190, 0.14);
-    /* opacity: 1; */
+    background: rgb(28, 48, 77);
+    opacity: 1;
     border: 1px solid #FFFFFF;
     margin: 0 10px;
 }
@@ -46,4 +57,6 @@
     width: 18px;
     height: 18px;
     opacity: 1;
+    position: relative;
+    border: 4px solid #FFFFFF;
 }

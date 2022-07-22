@@ -10,6 +10,12 @@
     z-index: 15;
 }
 
+#swiper-prev:hover > svg > path{
+    transition: all 0.3s;
+    fill: #408cff;
+    stroke: #408cff;
+}
+
 .swiper-prev::after {
     display: none;
 }
@@ -24,6 +30,12 @@
     height: 36px;
     transform: rotate(180deg);
     z-index: 15;
+}
+
+#swiper-next:hover > svg > path{
+    transition: all 0.3s;
+    fill: #408cff;
+    stroke: #408cff;
 }
 
 .swiper-next::after {

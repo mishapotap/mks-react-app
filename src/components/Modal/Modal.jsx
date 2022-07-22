@@ -6,7 +6,7 @@ import { dummyData } from "../../data";
 import { ContentModule } from "../../content";
 import modules from "../../modules";
 
-const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, structureContent, setStructureContent }) => {
+const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, structureContent, setStructureContent, scienceActive }) => {
     const [structureId, setStructureId] = useState("");
     const [structureContentItem, setStructureContentItem] = useState(false);
 
@@ -48,14 +48,22 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                         </div>
                         <div className={styles.content}>
                             <div className={styles.contentSlider}>
-                                {dummyData.mksAboutInfo.slider.map((item, index) => (
+                                {scienceActive ? 
+                                (dummyData.scienceAboutInfo.slider.map((item, index) => (
                                     <ContentModule key={index} data={item} modules={modules.base}/>
-                                ))}
+                                ))) 
+                                : (dummyData.mksAboutInfo.slider.map((item, index) => (
+                                    <ContentModule key={index} data={item} modules={modules.base}/>
+                                )))}
                             </div>
                             <div className={styles.contentText}>
-                                {dummyData.mksAboutInfo.content.map((item, index) => (
+                                {scienceActive ? 
+                                (dummyData.scienceAboutInfo.content.map((item, index) => (
                                     <ContentModule key={index} data={item} modules={modules.base}/>
-                                ))}
+                                ))) 
+                                : (dummyData.mksAboutInfo.content.map((item, index) => (
+                                    <ContentModule key={index} data={item} modules={modules.base}/>
+                                )))}
                             </div>
                         </div>
                     </>
@@ -70,14 +78,22 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                                 </div>
                                 <div className={styles.content}>
                                     <div className={styles.contentSlider}>
-                                        {dummyData.mksStructure[structureId].slider.map((item, index) => (
+                                        {scienceActive ? 
+                                        (dummyData.scienceStructure[structureId].slider.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
-                                        ))}
+                                        ))) 
+                                        : (dummyData.mksStructure[structureId].slider.map((item, index) => (
+                                            <ContentModule key={index} data={item} modules={modules.base}/>
+                                        )))}
                                     </div>
-                                    <div className={styles.contentText}>
-                                        {dummyData.mksStructure[structureId].content.map((item, index) => (
+                                    <div className={scienceActive ? styles.contentTextCentered : styles.contentText }>
+                                        {scienceActive ? 
+                                        (dummyData.scienceStructure[structureId].content.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
-                                        ))}
+                                        ))) 
+                                        : (dummyData.mksStructure[structureId].content.map((item, index) => (
+                                            <ContentModule key={index} data={item} modules={modules.base}/>
+                                        )))}
                                     </div>
                                 </div>
                             </>
@@ -87,8 +103,9 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.aboutContent}>
-                                    <div className={styles.moduleTitle}>Состав МКС</div>
-                                        {dummyData.mksStructure.map((item, index) => (
+                                    <div className={styles.moduleTitle}>{scienceActive ? "Состав Науки" : "Состав МКС"}</div>
+                                        {scienceActive ? 
+                                        (dummyData.scienceStructure.map((item, index) => (
                                             <div key={item.id} className={styles.structureItem} onClick={() => {setStructureId(item.id - 1); setStructureContentItem(true);}}>
                                                 <div style={{display: 'flex', justifyContent: "center", alignItems: 'center', marginRight: '25px'}}>
                                                     <MKSStructureCircle/>
@@ -96,9 +113,17 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                                                 </div>
                                                 <div className={styles.aboutText}>{item.name}</div>
                                             </div>
-                                        ))}
+                                        ))) 
+                                        : (dummyData.mksStructure.map((item, index) => (
+                                            <div key={item.id} className={styles.structureItem} onClick={() => {setStructureId(item.id - 1); setStructureContentItem(true);}}>
+                                                <div style={{display: 'flex', justifyContent: "center", alignItems: 'center', marginRight: '25px'}}>
+                                                    <MKSStructureCircle/>
+                                                    <div className={styles.aboutNumber}>{item.id}</div>
+                                                </div>
+                                                <div className={styles.aboutText}>{item.name}</div>
+                                            </div>
+                                        )))}
                                 </div>
-                                
                             </>
                         )}
                     </>
