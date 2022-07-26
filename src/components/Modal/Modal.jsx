@@ -12,9 +12,9 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
 
     window.addEventListener("message", receiveMessage, false);
     function receiveMessage(event)  {
-      if(event.origin !== 'https://ate2.avt.promo') {
-          console.log('URL issues');
-          console.log(event.data);
+      if(event.origin !== 'https://mks-nauka.avt.promo') {
+        //   console.log('URL issues');
+        //   console.log(event.data);
           return;
       } else {
           let myMsg = event.data;

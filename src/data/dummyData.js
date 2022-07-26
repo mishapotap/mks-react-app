@@ -7,7 +7,10 @@ const mksAboutInfo = {
 			value: [
 				{ id: 1, image: require("../images/MksModal/main/modal-01.png")},
 				{ id: 2, image: require("../images/MksModal/main/modal-02.png")},
-				{ id: 3, image: require("../images/MksModal/main/modal-03.png")}
+				{ id: 3, image: require("../images/MksModal/main/modal-03.png")},
+				{ id: 4, image: require("../images/MksModal/main/modal-04.png")},
+				{ id: 5, image: require("../images/MksModal/main/modal-05.png")},
+				{ id: 6, image: require("../images/MksModal/main/modal-06.png")}
 			]
 		},
 	],
@@ -77,7 +80,9 @@ const mksStructure = [
 				value: [
 					{ id: 1, image: require("../images/MksModal/1/modal-01.png")},
 					{ id: 2, image: require("../images/MksModal/1/modal-02.png")},
-					{ id: 3, image: require("../images/MksModal/1/modal-03.png")}
+					{ id: 3, image: require("../images/MksModal/1/modal-03.png")},
+					{ id: 4, image: require("../images/MksModal/1/modal-04.png")},
+					{ id: 5, image: require("../images/MksModal/1/modal-05.png")}
 				]
 			},
 		],
@@ -219,7 +224,8 @@ const mksStructure = [
 					{ id: 1, image: require("../images/MksModal/3/modal-01.png")},
 					{ id: 2, image: require("../images/MksModal/3/modal-02.png")},
 					{ id: 3, image: require("../images/MksModal/3/modal-03.png")},
-					{ id: 4, image: require("../images/MksModal/3/modal-04.png")}
+					{ id: 4, image: require("../images/MksModal/3/modal-04.png")},
+					{ id: 5, image: require("../images/MksModal/3/modal-05.png")}
 				]
 			},
 		],
@@ -917,7 +923,10 @@ const mksStructure = [
 					{ id: 1, image: require("../images/MksModal/13/modal-01.png")},
 					{ id: 2, image: require("../images/MksModal/13/modal-02.png")},
 					{ id: 3, image: require("../images/MksModal/13/modal-03.png")},
-					{ id: 4, image: require("../images/MksModal/13/modal-04.png")}
+					{ id: 4, image: require("../images/MksModal/13/modal-04.png")},
+					{ id: 5, image: require("../images/MksModal/13/modal-05.png")},
+					{ id: 6, image: require("../images/MksModal/13/modal-06.png")},
+					{ id: 7, image: require("../images/MksModal/13/modal-07.png")}
 				]
 			},
 		],
@@ -1093,7 +1102,11 @@ const mksStructure = [
 				slug: "modalSlider",
 				value: [
 					{ id: 1, image: require("../images/MksModal/15/modal-01.png")},
-					{ id: 2, image: require("../images/MksModal/15/modal-02.png")}
+					{ id: 2, image: require("../images/MksModal/15/modal-02.png")},
+					{ id: 3, image: require("../images/MksModal/15/modal-03.png")},
+					{ id: 4, image: require("../images/MksModal/15/modal-04.png")},
+					{ id: 5, image: require("../images/MksModal/15/modal-05.png")},
+					{ id: 6, image: require("../images/MksModal/15/modal-06.png")}
 				]
 			},
 		],
