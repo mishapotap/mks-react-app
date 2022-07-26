@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimRightBottom, LayoutBg } from "../../svg";
+import { LayoutBg } from "../../svg";
 import {SquareButton} from "../../components";
 import styles from "./Layout.module.css";
 import { Header, Video } from '../../components';
@@ -13,7 +13,7 @@ const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
     }
 	return (
 		<div className={styles.wrapper}>
-			<Video videoContent={videoContent} setVideoContent={setVideoContent}/>
+			<Video scienceActive={scienceActive} videoContent={videoContent} setVideoContent={setVideoContent}/>
 			<div style={{width: '60%', position: 'absolute', top: '2%', left: 'auto', zIndex: 1}}>
 				<Header onClickHandler={() => window.location.href = "https://agat.avt.promo/"}/>
 			</div>
@@ -28,7 +28,6 @@ const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
 					<SquareButton withImage={true} image={SpaceshipRight} width={94} height={39} buttonText={"Вид справа"} onClickHandler={() => {playModal(); document.getElementById('scienceIframe').contentWindow.postMessage("right", "*")}}/>
 				</div>
 			)}
-			{/* <AnimRightBottom/> */}
 		</div>
 	);
 };

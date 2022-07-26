@@ -14,6 +14,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
     function receiveMessage(event)  {
       if(event.origin !== 'https://ate2.avt.promo') {
           console.log('URL issues');
+          console.log(event.data);
           return;
       } else {
           let myMsg = event.data;
@@ -36,7 +37,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
     }
 
     return (
-		<div className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
+		<div id="modal" className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
             {modalVisible && playModal()}
 			<div className={styles.container}>
 				<img src={ModalBg} alt="#" className={styles.bgImage} />
