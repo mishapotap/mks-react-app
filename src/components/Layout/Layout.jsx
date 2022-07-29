@@ -7,7 +7,7 @@ import { SpaceshipLeft, SpaceshipMiddle, SpaceshipRight } from '../../images'
 
 const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
 	// audio
-	let modalAudio = new Audio("/modal.mp3")
+	let modalAudio = new Audio("/mks/modal.mp3")
     const playModal = () => {
         modalAudio.play()
     }

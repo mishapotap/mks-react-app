@@ -5,7 +5,7 @@ import {ModalCloseButton} from '../../svg'
 
 
 const Video = ({videoContent, setVideoContent, scienceActive}) => {
-    let buttonAudio = new Audio("/button.mp3")
+    let buttonAudio = new Audio("/mks/button.mp3")
     const playButton = () => {
         buttonAudio.play()
     }

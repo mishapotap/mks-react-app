@@ -12,11 +12,11 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
 
     window.addEventListener("message", receiveMessage, false);
     function receiveMessage(event)  {
-      if(event.origin !== 'https://mks-nauka.avt.promo') {
-        //   console.log('URL issues');
-        //   console.log(event.data);
-          return;
-      } else {
+    //   if(event.origin !== 'https://ate2.avt.promo') {
+    //     //   console.log('URL issues');
+    //     //   console.log(event.data);
+    //       return;
+    //   } else {
           let myMsg = event.data;
           if (myMsg <= 17) {
             setStructureId(myMsg - 1);
@@ -24,11 +24,11 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
             setStructureContentItem(true);
             setModalVisible(true);
           }
-      }           
+    //   }           
     }
 
-    let buttonAudio = new Audio("/button.mp3")
-    let modalAudio = new Audio("/modal.mp3")
+    let buttonAudio = new Audio("/mks/button.mp3")
+    let modalAudio = new Audio("/mks/modal.mp3")
     const playButton = () => {
         buttonAudio.play()
     }
