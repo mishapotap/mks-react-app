@@ -81,10 +81,10 @@ const Mks = () => {
             <iframe id="myIframe" src={scienceActive ? "https://ate2.avt.promo/modelscience/NAUKA.html" : "https://ate2.avt.promo/model/ISS.html"} frameBorder="0"></iframe>
         </div> */}
         <div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>
-            <iframe id="myIframe" src="https://agat.avt.promo/mks/model/ISS.html" frameBorder="0"></iframe>
+            <iframe id="myIframe" title='Mks' src="https://agat.avt.promo/mks/model/ISS.html" frameBorder="0"></iframe>
         </div>
         <div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>
-            <iframe id="scienceIframe" src="https://agat.avt.promo/mks/modelscience/NAUKA.html" frameBorder="0"></iframe>
+            <iframe id="scienceIframe" title='Nauka' src="https://agat.avt.promo/mks/modelscience/NAUKA.html" frameBorder="0"></iframe>
         </div>
       </Layout>
     </>
