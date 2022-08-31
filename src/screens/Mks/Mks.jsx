@@ -34,8 +34,8 @@ const Mks = () => {
   const [structureContent, setStructureContent] = useState(false);
   const [videoContent, setVideoContent] = useState(false);
   // button + modal audio
-  let buttonAudio = new Audio("/mks/button.mp3")
-  let modalAudio = new Audio("/mks/modal.mp3")
+  let buttonAudio = new Audio("/button.mp3")
+  let modalAudio = new Audio("/modal.mp3")
   const playButton = () => {
     buttonAudio.play()
   }
@@ -43,7 +43,7 @@ const Mks = () => {
     modalAudio.play()
   }
   // bg audio
-  const [playing, toggle] = useAudio("/mks/bg.mp3");
+  const [playing, toggle] = useAudio("/bg.mp3");
   
   
   return (

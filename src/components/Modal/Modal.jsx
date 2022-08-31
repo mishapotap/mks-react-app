@@ -27,8 +27,8 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
     //   }           
     }
 
-    let buttonAudio = new Audio("/mks/button.mp3")
-    let modalAudio = new Audio("/mks/modal.mp3")
+    let buttonAudio = new Audio("/button.mp3")
+    let modalAudio = new Audio("/modal.mp3")
     const playButton = () => {
         buttonAudio.play()
     }

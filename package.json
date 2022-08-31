@@ -1,6 +1,5 @@
 {
   "name": "mks-react-app",
-  "homepage": "/mks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
