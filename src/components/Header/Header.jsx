@@ -12,7 +12,7 @@ const Header = ({onClickHandler}) => {
         <div className={styles.roscosmos} onClick={() => window.location.href = "https://www.roscosmos.ru/"}>
             <RoscosmosIcon/>
         </div>
-        <div className={styles.button} onClick={onClickHandler}>Вернуться на сайт</div>
+        {/* <div className={styles.button} onClick={onClickHandler}>Вернуться на сайт</div> */}
     </div>
     )
 }

@@ -10,6 +10,7 @@ import { SpaceShip, MksIcon } from '../../images'
 const Mks = () => {
 
   const [scienceActive, setScienceActive] = useState(window.location.hash);
+  const [researchActive, setResearchActive] = useState(false);
   const NAUKA = "#nauka";
   const MKS = "#mks";
 
@@ -51,7 +52,7 @@ const Mks = () => {
         <title>{scienceActive === NAUKA ? '«Наука» — многоцелевой лабораторный модуль российского сегмента МКС' : '«МКС» — пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс'}</title>
       </Helmet>
       
-      <Layout scienceActive={scienceActive === NAUKA} videoContent={videoContent} setVideoContent={setVideoContent}>
+      <Layout scienceActive={scienceActive === NAUKA} videoContent={videoContent} setVideoContent={setVideoContent} researchActive={researchActive} setResearchActive={setResearchActive}>
         <Modal scienceActive={scienceActive === NAUKA} modalVisible={modalVisible} setModalVisible={setModalVisible} aboutContent={aboutContent} setAboutContent={setAboutContent} structureContent={structureContent} setStructureContent={setStructureContent} />
         <div className={styles.screenTitle}>
           <ScreenTitle span={scienceActive === NAUKA ? "«Наука»" : "«МКС»"} text={scienceActive === NAUKA ? " — многоцелевой лабораторный модуль российского сегмента МКС" : " - пилотируемая орбитальная станция, многоцелевой космический исследовательский комплекс"}/>
@@ -63,7 +64,7 @@ const Mks = () => {
           <SquareButton buttonText={scienceActive === NAUKA ? "Состав модуля" : "Состав МКС"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
         </div>
         <div className={styles.researchButton}>
-          <SquareButton buttonText={"Космические исследования"} onClickHandler={() => window.location.href = "/kosmicheskie-issledovaniya/"}/>
+          <SquareButton buttonText={"Космические исследования"} onClickHandler={() => {playButton(); setResearchActive(true)}}/>
         </div>
         <div className={styles.videoButton} onClick={playModal}>
           <SquareButton buttonText={"Видео"} onClickHandler={() => setVideoContent(true)}/>
@@ -81,10 +82,10 @@ const Mks = () => {
             <iframe id="myIframe" src={scienceActive ? "https://ate2.avt.promo/modelscience/NAUKA.html" : "https://ate2.avt.promo/model/ISS.html"} frameBorder="0"></iframe>
         </div> */}
         <div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>
-            <iframe id="myIframe" title='Mks' src="https://agat.avt.promo/mks/model/ISS.html" frameBorder="0"></iframe>
+            <iframe id="myIframe" title='Mks' src="https://mks-nauka.avt.promo/model/ISS.html" frameBorder="0"></iframe>
         </div>
         <div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>
-            <iframe id="scienceIframe" title='Nauka' src="https://agat.avt.promo/mks/modelscience/NAUKA.html" frameBorder="0"></iframe>
+            <iframe id="scienceIframe" title='Nauka' src="https://mks-nauka.avt.promo/modelscience/NAUKA.html" frameBorder="0"></iframe>
         </div>
       </Layout>
     </>

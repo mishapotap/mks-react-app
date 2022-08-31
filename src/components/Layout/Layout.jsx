@@ -1,11 +1,10 @@
 import React from "react";
 import { LayoutBg } from "../../svg";
-import {SquareButton} from "../../components";
 import styles from "./Layout.module.css";
-import { Header, Video } from '../../components';
+import { Header, Video, VimeoVideo, SquareButton } from '../../components';
 import { SpaceshipLeft, SpaceshipMiddle, SpaceshipRight } from '../../images'
 
-const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
+const Layout = ({ children, videoContent, setVideoContent, scienceActive, researchActive, setResearchActive }) => {
 	// audio
 	let modalAudio = new Audio("/mks/modal.mp3")
     const playModal = () => {
@@ -13,9 +12,11 @@ const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
     }
 	return (
 		<div className={styles.wrapper}>
-			<Video scienceActive={scienceActive} videoContent={videoContent} setVideoContent={setVideoContent}/>
+			<Video scienceActive={scienceActive} videoContent={videoContent} setVideoContent={setVideoContent} />
+			<VimeoVideo researchActive={researchActive} setResearchActive={setResearchActive} />
 			<div style={{width: '60%', position: 'absolute', top: '2%', left: 'auto', zIndex: 1}}>
-				<Header onClickHandler={() => window.location.href = "https://agat.avt.promo/"}/>
+				{/* <Header onClickHandler={() => window.location.href = "https://agat.avt.promo/"}/> */}
+				<Header />
 			</div>
 			<div className={styles.layoutBg}>
 				<LayoutBg />
