@@ -6,8 +6,9 @@ import ModalTechnical from "./ModalTechnical/ModalTechnical";
 import ModalList from "./ModalList/ModalList";
 import BoldText from "./BoldText/BoldText";
 import TextSlider from "./TextSlider/TextSlider";
+import VideoBlock from "./VideoBlock/VideoBlock";
 
 
 export default {
-	base: [Paragraph, Heading, BoldText, ModalSlider, ModalInfo, ModalTechnical, ModalList, TextSlider],
+	base: [Paragraph, Heading, BoldText, ModalSlider, ModalInfo, ModalTechnical, ModalList, TextSlider, VideoBlock],
 };

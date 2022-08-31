@@ -1,6 +1,13 @@
 const mksAboutInfo = {
 	id: 1,
 	name: "Международная космическая станция",
+	video: [
+		{
+			slug: "videoBlock",
+			value: { id: 1, video: require("../images/MksModal/main/ISS.webm")},
+			
+		},
+	],
 	slider: [
 		{
 			slug: "modalSlider",
@@ -74,6 +81,13 @@ const mksStructure = [
 	{
 		id: 1,
 		name: "Функционально-грузовой блок «Заря»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/1/1_Zarya.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -167,6 +181,13 @@ const mksStructure = [
 	{
 		id: 2,
 		name: "Соединительный модуль «Юнити»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/2/2_Unity.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -217,6 +238,13 @@ const mksStructure = [
 	{
 		id: 3,
 		name: "Служебный модуль «Звезда»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/3/3_Zvezda.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -338,6 +366,13 @@ const mksStructure = [
 	{
 		id: 4,
 		name: "Лабораторный модуль «Дестини»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/4/4_Destiny.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -392,6 +427,13 @@ const mksStructure = [
 	{
 		id: 5,
 		name: "Шлюзовая камера «Квест»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/5/5_Quest.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -454,6 +496,13 @@ const mksStructure = [
 	{
 		id: 6,
 		name: "Соединительный модуль «Гармония»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/6/6_Harmony.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -504,6 +553,13 @@ const mksStructure = [
 	{
 		id: 7,
 		name: "Лабораторный модуль «Коламбус»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/7/7_Columbus.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -558,6 +614,13 @@ const mksStructure = [
 	{
 		id: 8,
 		name: "Грузовой модуль (1-й доставленный элемент модуля «Кибо»)",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/8/8_KiboLogistics.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -608,6 +671,13 @@ const mksStructure = [
 	{
 		id: 9,
 		name: "Научно-исследовательский модуль «Кибо»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/9/9_KiboLab.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -680,6 +750,13 @@ const mksStructure = [
 	{
 		id: 10,
 		name: "Малый исследовательский модуль «Поиск»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/10/10_Poisk.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -800,6 +877,12 @@ const mksStructure = [
 	{
 		id: 11,
 		name: "Жилой модуль «Транквилити»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/11/11_Tranquility.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -858,6 +941,12 @@ const mksStructure = [
 	{
 		id: 12,
 		name: "Обзорный модуль «Купола»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/12/12_Cupola.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -916,6 +1005,12 @@ const mksStructure = [
 	{
 		id: 13,
 		name: "Малый исследовательский модуль «Рассвет»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/13/13_Rassvet.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1043,6 +1138,12 @@ const mksStructure = [
 	{
 		id: 14,
 		name: "Многофункциональный модуль «Леонардо»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/14/14_Leonardo.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1097,6 +1198,12 @@ const mksStructure = [
 	{
 		id: 15,
 		name: "Научно-энергетический модуль",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/15/15_NEM.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1173,6 +1280,12 @@ const mksStructure = [
 	{
 		id: 16,
 		name: "Многоцелевой исследовательский модуль «Наука»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/16/16_Nauka.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1361,6 +1474,12 @@ const mksStructure = [
 	{
 		id: 17,
 		name: "Узловой модуль «Причал»",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/MksModal/17/17_Prichal.webm")},
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1524,6 +1643,13 @@ const mksStructure = [
 const scienceAboutInfo = {
 	id: 1,
 	name: "Многоцелевой исследовательский модуль «Наука»",
+	video: [
+		{
+			slug: "videoBlock",
+			value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+			
+		},
+	],
 	slider: [
 		{
 			slug: "modalSlider",
@@ -1714,6 +1840,13 @@ const scienceStructure = [
 	{
 		id: 1,
 		name: "Пассивный стыковочный агрегат",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1737,6 +1870,13 @@ const scienceStructure = [
 	{
 		id: 2,
 		name: "Антенны Курс-П",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1760,6 +1900,13 @@ const scienceStructure = [
 	{
 		id: 3,
 		name: "Иллюминатор",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1787,6 +1934,13 @@ const scienceStructure = [
 	{
 		id: 4,
 		name: "Шлюзовая камера (ШК)",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1814,6 +1968,13 @@ const scienceStructure = [
 	{
 		id: 5,
 		name: "Средства крепления крупногабаритных объектов (СККО)",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1837,6 +1998,13 @@ const scienceStructure = [
 	{
 		id: 6,
 		name: "Платформа для установки научного оборудования",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1860,6 +2028,13 @@ const scienceStructure = [
 	{
 		id: 7,
 		name: "Переносное рабочее место (ПРМ)",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1883,6 +2058,13 @@ const scienceStructure = [
 	{
 		id: 8,
 		name: "Блоки двигателей",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1917,6 +2099,13 @@ const scienceStructure = [
 	{
 		id: 9,
 		name: "Манипулятор ERA",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1940,6 +2129,13 @@ const scienceStructure = [
 	{
 		id: 10,
 		name: "Топливные баки",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1967,6 +2163,13 @@ const scienceStructure = [
 	{
 		id: 11,
 		name: "Солнечная батарея",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1994,6 +2197,13 @@ const scienceStructure = [
 	{
 		id: 12,
 		name: "Радиационный теплообменник дополнительный (РТОд)",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2021,6 +2231,13 @@ const scienceStructure = [
 	{
 		id: 13,
 		name: "Антенны Курс-А",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2044,6 +2261,13 @@ const scienceStructure = [
 	{
 		id: 14,
 		name: "Активный стыковочный агрегат",
+		video: [
+			{
+				slug: "videoBlock",
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",

@@ -50,12 +50,19 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                         <div className={styles.content}>
                             <div className={styles.contentSlider}>
                                 {scienceActive ? 
-                                (dummyData.scienceAboutInfo.slider.map((item, index) => (
+                                // (dummyData.scienceAboutInfo.slider.map((item, index) => (
+                                //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                // ))) 
+                                // : (dummyData.mksAboutInfo.slider.map((item, index) => (
+                                //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                // )))
+                                (dummyData.scienceAboutInfo.video.map((item, index) => (
                                     <ContentModule key={index} data={item} modules={modules.base}/>
                                 ))) 
-                                : (dummyData.mksAboutInfo.slider.map((item, index) => (
+                                : (dummyData.mksAboutInfo.video.map((item, index) => (
                                     <ContentModule key={index} data={item} modules={modules.base}/>
-                                )))}
+                                )))
+                                }
                             </div>
                             <div className={styles.contentText}>
                                 {scienceActive ? 
@@ -80,12 +87,19 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                                 <div className={styles.content}>
                                     <div className={styles.contentSlider}>
                                         {scienceActive ? 
-                                        (dummyData.scienceStructure[structureId].slider.map((item, index) => (
+                                        // (dummyData.scienceStructure[structureId].slider.map((item, index) => (
+                                        //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                        // ))) 
+                                        // : (dummyData.mksStructure[structureId].slider.map((item, index) => (
+                                        //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                        // )))
+                                        (dummyData.scienceStructure[structureId].video.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
                                         ))) 
-                                        : (dummyData.mksStructure[structureId].slider.map((item, index) => (
+                                        : (dummyData.mksStructure[structureId].video.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
-                                        )))}
+                                        )))
+                                        }
                                     </div>
                                     <div className={scienceActive ? styles.contentTextCentered : styles.contentText }>
                                         {scienceActive ? 
