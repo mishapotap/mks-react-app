@@ -1,10 +1,17 @@
 const mksAboutInfo = {
 	id: 1,
 	name: "Международная космическая станция",
-	video: [
+	// video: [
+	// 	{
+	// 		slug: "videoBlock",
+	// 		value: { id: 1, video: require("../images/MksModal/main/ISS.webm")},
+			
+	// 	},
+	// ],
+	image: [
 		{
-			slug: "videoBlock",
-			value: { id: 1, video: require("../images/MksModal/main/ISS.webm")},
+			slug: "imageBlock",
+			value: { id: 1, image: require("../images/MksModal/main/18_ISS.png")},
 			
 		},
 	],
@@ -81,10 +88,17 @@ const mksStructure = [
 	{
 		id: 1,
 		name: "Функционально-грузовой блок «Заря»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/1/1_Zarya.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/1/1_Zarya.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/1/1_Zarya.png")},
 				
 			},
 		],
@@ -181,10 +195,17 @@ const mksStructure = [
 	{
 		id: 2,
 		name: "Соединительный модуль «Юнити»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/2/2_Unity.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/2/2_Unity.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/2/2_Unity.png")},
 				
 			},
 		],
@@ -238,10 +259,17 @@ const mksStructure = [
 	{
 		id: 3,
 		name: "Служебный модуль «Звезда»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/3/3_Zvezda.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/3/3_Zvezda.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/3/3_Zvezda.png")},
 				
 			},
 		],
@@ -366,10 +394,17 @@ const mksStructure = [
 	{
 		id: 4,
 		name: "Лабораторный модуль «Дестини»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/4/4_Destiny.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/4/4_Destiny.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/4/4_Destiny.png")},
 				
 			},
 		],
@@ -427,10 +462,17 @@ const mksStructure = [
 	{
 		id: 5,
 		name: "Шлюзовая камера «Квест»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/5/5_Quest.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/5/5_Quest.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/5/5_Quest.png")},
 				
 			},
 		],
@@ -496,10 +538,17 @@ const mksStructure = [
 	{
 		id: 6,
 		name: "Соединительный модуль «Гармония»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/6/6_Harmony.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/6/6_Harmony.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/6/6_Harmony.png")},
 				
 			},
 		],
@@ -553,10 +602,17 @@ const mksStructure = [
 	{
 		id: 7,
 		name: "Лабораторный модуль «Коламбус»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/7/7_Columbus.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/7/7_Columbus.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/7/7_Columbus.png")},
 				
 			},
 		],
@@ -614,10 +670,17 @@ const mksStructure = [
 	{
 		id: 8,
 		name: "Грузовой модуль (1-й доставленный элемент модуля «Кибо»)",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/8/8_KiboLogistics.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/8/8_KiboLogistics.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/8/8_KiboLogistics.png")},
 				
 			},
 		],
@@ -671,10 +734,17 @@ const mksStructure = [
 	{
 		id: 9,
 		name: "Научно-исследовательский модуль «Кибо»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/9/9_KiboLab.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/9/9_KiboLab.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/9/9_KiboLab.png")},
 				
 			},
 		],
@@ -750,10 +820,17 @@ const mksStructure = [
 	{
 		id: 10,
 		name: "Малый исследовательский модуль «Поиск»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/10/10_Poisk.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/10/10_Poisk.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/10/10_Poisk.png")},
 				
 			},
 		],
@@ -877,10 +954,17 @@ const mksStructure = [
 	{
 		id: 11,
 		name: "Жилой модуль «Транквилити»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/11/11_Tranquility.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/11/11_Tranquility.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/11/11_Tranquility.png")},
+				
 			},
 		],
 		slider: [
@@ -941,10 +1025,17 @@ const mksStructure = [
 	{
 		id: 12,
 		name: "Обзорный модуль «Купола»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/12/12_Cupola.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/12/12_Cupola.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/12/12_Cupola.png")},
+				
 			},
 		],
 		slider: [
@@ -1005,10 +1096,17 @@ const mksStructure = [
 	{
 		id: 13,
 		name: "Малый исследовательский модуль «Рассвет»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/13/13_Rassvet.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/13/13_Rassvet.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/13/13_Rassvet.png")},
+				
 			},
 		],
 		slider: [
@@ -1138,10 +1236,17 @@ const mksStructure = [
 	{
 		id: 14,
 		name: "Многофункциональный модуль «Леонардо»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/14/14_Leonardo.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/14/14_Leonardo.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/14/14_Leonardo.png")},
+				
 			},
 		],
 		slider: [
@@ -1198,10 +1303,17 @@ const mksStructure = [
 	{
 		id: 15,
 		name: "Научно-энергетический модуль",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/15/15_NEM.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/15/15_NEM.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/15/15_NEM.png")},
+				
 			},
 		],
 		slider: [
@@ -1280,10 +1392,17 @@ const mksStructure = [
 	{
 		id: 16,
 		name: "Многоцелевой исследовательский модуль «Наука»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/16/16_Nauka.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/16/16_Nauka.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/16/16_Nauka.png")},
+				
 			},
 		],
 		slider: [
@@ -1474,10 +1593,17 @@ const mksStructure = [
 	{
 		id: 17,
 		name: "Узловой модуль «Причал»",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/MksModal/17/17_Prichal.webm")},
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/17/17_Prichal.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/MksModal/17/17_Prichal.png")},
+				
 			},
 		],
 		slider: [
@@ -1643,10 +1769,17 @@ const mksStructure = [
 const scienceAboutInfo = {
 	id: 1,
 	name: "Многоцелевой исследовательский модуль «Наука»",
-	video: [
+	// video: [
+	// 	{
+	// 		slug: "videoBlock",
+	// 		value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+			
+	// 	},
+	// ],
+	image: [
 		{
-			slug: "videoBlock",
-			value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+			slug: "imageBlock",
+			value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 			
 		},
 	],
@@ -1840,10 +1973,17 @@ const scienceStructure = [
 	{
 		id: 1,
 		name: "Пассивный стыковочный агрегат",
-		video: [
+		// video: [
+		// 	{
+		// 		slug: "videoBlock",
+		// 		value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+		// 	},
+		// ],
+		image: [
 			{
-				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],
@@ -1877,6 +2017,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1904,6 +2051,13 @@ const scienceStructure = [
 			{
 				slug: "videoBlock",
 				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],
@@ -1941,6 +2095,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -1975,6 +2136,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2002,6 +2170,13 @@ const scienceStructure = [
 			{
 				slug: "videoBlock",
 				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],
@@ -2035,6 +2210,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2062,6 +2244,13 @@ const scienceStructure = [
 			{
 				slug: "videoBlock",
 				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],
@@ -2106,6 +2295,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2133,6 +2329,13 @@ const scienceStructure = [
 			{
 				slug: "videoBlock",
 				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],
@@ -2170,6 +2373,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2201,6 +2411,13 @@ const scienceStructure = [
 			{
 				slug: "videoBlock",
 				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],
@@ -2238,6 +2455,13 @@ const scienceStructure = [
 				
 			},
 		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
+				
+			},
+		],
 		slider: [
 			{
 				slug: "modalSlider",
@@ -2265,6 +2489,13 @@ const scienceStructure = [
 			{
 				slug: "videoBlock",
 				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				
+			},
+		],
+		image: [
+			{
+				slug: "imageBlock",
+				value: { id: 1, image: require("../images/ScienceModal/main/16_Nauka.png")},
 				
 			},
 		],

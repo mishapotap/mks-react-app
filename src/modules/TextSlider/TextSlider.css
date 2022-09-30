@@ -1,9 +1,10 @@
 /* navigation */
 #swiper-prev {
     position: absolute;
-    bottom: 15px;
+    /* bottom: 15px; */
+    bottom: 10%;
     top: auto;
-    right: 196px;
+    right: 20%;
     cursor: pointer;
     width: 31px;
     height: 36px;
@@ -22,8 +23,9 @@
 
 #swiper-next {
     position: absolute;
-    bottom: 15px;
-    right: 0;
+    /* bottom: 15px; */
+    bottom: 10%;
+    right: 5%;
     top: auto;
     cursor: pointer;
     width: 31px;
@@ -53,8 +55,10 @@
     justify-content: center;
     align-items: center;
     /* position */
-    right: 81px;
-    bottom: 0;
+    /* right: 81px; */
+    right: 12%;
+    /* bottom: 0; */
+    bottom: 8.5%;
     left: auto;
     /* text */
     font-family: 'Montserrat';

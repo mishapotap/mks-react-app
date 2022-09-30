@@ -1,14 +1,16 @@
 .text {
-    /* width: 800px; */
-    /* text */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
+	/* width: 800px; */
+	/* text */
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	/* font-size: 8px; */
+	/* font-size: 1vw; */
+	line-height: 23px;
+	letter-spacing: 0.05em;
+	color: #ffffff;
 }
 .text span {
-    color: #0066FF;
+	color: #0066ff;
 }

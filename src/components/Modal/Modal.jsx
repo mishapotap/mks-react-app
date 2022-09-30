@@ -27,24 +27,15 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
     //   }           
     }
 
-    let buttonAudio = new Audio("/mks/button.mp3")
-    let modalAudio = new Audio("/mks/modal.mp3")
-    const playButton = () => {
-        buttonAudio.play()
-    }
-    const playModal = () => {
-        modalAudio.play()
-    }
-
     return (
 		<div id="modal" className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
-            {modalVisible && playModal()}
+            {/* {modalVisible && playModal()} */}
 			<div className={styles.container}>
-				<img src={ModalBg} alt="#" className={styles.bgImage} />
+				{/* <img src={ModalBg} alt="#" className={styles.bgImage} /> */}
                 {/* О МКС */}
 				{aboutContent ? (
                     <>
-                        <div className={styles.closeButton} onClick={() => {playButton(); setAboutContent(false); setModalVisible(false)}}>
+                        <div className={styles.closeButton} onClick={() => {setAboutContent(false); setModalVisible(false)}}>
                             <ModalCloseButton />
                         </div>
                         <div className={styles.content}>
@@ -56,12 +47,18 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                                 // : (dummyData.mksAboutInfo.slider.map((item, index) => (
                                 //     <ContentModule key={index} data={item} modules={modules.base}/>
                                 // )))
-                                (dummyData.scienceAboutInfo.video.map((item, index) => (
+                                (dummyData.scienceAboutInfo.image.map((item, index) => (
                                     <ContentModule key={index} data={item} modules={modules.base}/>
                                 ))) 
-                                : (dummyData.mksAboutInfo.video.map((item, index) => (
+                                : (dummyData.mksAboutInfo.image.map((item, index) => (
                                     <ContentModule key={index} data={item} modules={modules.base}/>
                                 )))
+                                // (dummyData.scienceAboutInfo.video.map((item, index) => (
+                                //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                // ))) 
+                                // : (dummyData.mksAboutInfo.video.map((item, index) => (
+                                //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                // )))
                                 }
                             </div>
                             <div className={styles.contentText}>
@@ -81,7 +78,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                     <>
                         {structureContentItem ? (
                             <>
-                                <div className={styles.closeButton} onClick={() => {playButton(); setStructureContent(false); setStructureContentItem(false); setModalVisible(false)}}>
+                                <div className={styles.closeButton} onClick={() => {setStructureContent(false); setStructureContentItem(false); setModalVisible(false)}}>
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.content}>
@@ -93,12 +90,18 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                                         // : (dummyData.mksStructure[structureId].slider.map((item, index) => (
                                         //     <ContentModule key={index} data={item} modules={modules.base}/>
                                         // )))
-                                        (dummyData.scienceStructure[structureId].video.map((item, index) => (
+                                        (dummyData.scienceStructure[structureId].image.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
                                         ))) 
-                                        : (dummyData.mksStructure[structureId].video.map((item, index) => (
+                                        : (dummyData.mksStructure[structureId].image.map((item, index) => (
                                             <ContentModule key={index} data={item} modules={modules.base}/>
                                         )))
+                                        // (dummyData.scienceStructure[structureId].video.map((item, index) => (
+                                        //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                        // ))) 
+                                        // : (dummyData.mksStructure[structureId].video.map((item, index) => (
+                                        //     <ContentModule key={index} data={item} modules={modules.base}/>
+                                        // )))
                                         }
                                     </div>
                                     <div className={scienceActive ? styles.contentTextCentered : styles.contentText }>
@@ -114,7 +117,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
                             </>
                         ) : (
                             <>
-                                <div className={styles.closeButton} onClick={() => {playButton(); setStructureContent(false); setModalVisible(false)}}>
+                                <div className={styles.closeButton} onClick={() => {setStructureContent(false); setModalVisible(false)}}>
                                     <ModalCloseButton />
                                 </div>
                                 <div className={styles.aboutContent}>

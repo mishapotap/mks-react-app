@@ -4,11 +4,11 @@ import { Mks } from "./screens";
 function App() {
 	const initUI = () => {
 		if (window.innerWidth < 700) {
-			document.body.style.zoom = 0.3;
+			document.body.style.zoom = 0.45;
 		}
 
 		if (window.innerWidth >= 700 && window.innerWidth < 800) {
-			document.body.style.zoom = 0.4;
+			document.body.style.zoom = 0.45;
 		}
 
 		if (window.innerWidth >= 800 && window.innerWidth < 940) {

@@ -6,15 +6,11 @@ import nauka from "../../video/nauka.mp4";
 
 
 const Video = ({videoContent, setVideoContent, scienceActive}) => {
-    let buttonAudio = new Audio("/mks/button.mp3")
-    const playButton = () => {
-        buttonAudio.play()
-    }
     return (
         <>
             {videoContent ? (
                 <>
-                    <div className={styles.closeButton} onClick={() => {playButton(); setVideoContent(false)}}>
+                    <div className={styles.closeButton} onClick={() => setVideoContent(false)}>
                         <ModalCloseButton />
                     </div>
                     <video className={styles.videoWrapper} controls="controls" autoPlay>

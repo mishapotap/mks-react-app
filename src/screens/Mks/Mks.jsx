@@ -31,19 +31,9 @@ const Mks = () => {
   // new
   const [aboutContent, setAboutContent] = useState(false);
   const [structureContent, setStructureContent] = useState(false);
-  const [videoContent, setVideoContent] = useState(false);
-  // button + modal audio
-  let buttonAudio = new Audio("/mks/button.mp3")
-  let modalAudio = new Audio("/mks/modal.mp3")
-  const playButton = () => {
-    buttonAudio.play()
-  }
-  const playModal = () => {
-    modalAudio.play()
-  }
+  const [videoContent, setVideoContent] = useState(false);  
   // bg audio
   const [playing, toggle] = useAudio("/mks/bg.mp3");
-  
   
   return (
     <>
@@ -62,16 +52,16 @@ const Mks = () => {
         <div className={styles.structureButton}>
           <SquareButton buttonText={scienceActive === NAUKA ? "Состав модуля" : "Состав МКС"} onClickHandler={() => {setStructureContent(true); setModalVisible(true)}}/>
         </div>
-        <div className={styles.researchButton}>
+        {/* <div className={styles.researchButton}>
           <SquareButton buttonText={"Космические исследования"} onClickHandler={() => window.location.href = "/kosmicheskie-issledovaniya/"}/>
-        </div>
-        <div className={styles.videoButton} onClick={playModal}>
+        </div> */}
+        {/* <div className={styles.videoButton}>
           <SquareButton buttonText={"Видео"} onClickHandler={() => setVideoContent(true)}/>
-        </div>
-        <div className={styles.mksButton} onClick={() => {playButton(); setScienceActive(MKS)}}>
+        </div> */}
+        <div className={styles.mksButton} onClick={() => setScienceActive(MKS)}>
           <CircleButton buttonText={"МКС"} icon={MksIcon} active={scienceActive === NAUKA}/>
         </div>
-        <div className={styles.scienceButton} onClick={() => {playButton(); setScienceActive(NAUKA)}}>
+        <div className={styles.scienceButton} onClick={() => setScienceActive(NAUKA)}>
           <CircleButton buttonText={"Наука"} icon={SpaceShip} active={scienceActive === MKS}/>
         </div>
         <div className={styles.soundButton} onClick={toggle}>
