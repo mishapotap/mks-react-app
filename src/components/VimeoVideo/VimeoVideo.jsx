@@ -15,7 +15,7 @@ const VimeoVideo = ({researchActive, setResearchActive}) => {
                     <div className={styles.closeButton} onClick={() => {playButton(); setResearchActive(false)}}>
                         <ModalCloseButton />
                     </div>
-                    <iframe className={styles.videoWrapper} src={"https://player.vimeo.com/video/744880230?h=9c7ee62ad8"} frameBorder="0" title='video' allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className={styles.videoWrapper} src={"https://player.vimeo.com/video/756641807?h=1fca1a649f"} frameBorder="0" title='video' allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                     <div className={styles.blackBg}></div>
                 </>
             ) : null}
