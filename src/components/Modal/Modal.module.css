@@ -38,12 +38,15 @@
 .bgImage {
     width: 100%;
     height: 100%;
+    background-color: #000000;
+    border-radius: 30px;
+    border: 1px solid #3C70BE;
 }
 
 .closeButton {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 60px;
+    right: 60px;
     cursor: pointer;
 }
 .closeButton svg{
