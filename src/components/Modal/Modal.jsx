@@ -40,7 +40,7 @@ const Modal = ({ modalVisible, setModalVisible, aboutContent, setAboutContent, s
 		<div id="modal" className={styles.wrapper} style={{ display: modalVisible ? "flex" : "none" }}>
             {modalVisible && playModal()}
 			<div className={styles.container}>
-				<img src={ModalBg} alt="#" className={styles.bgImage} />
+				<div className={styles.bgImage} />
                 {/* О МКС */}
 				{aboutContent ? (
                     <>
