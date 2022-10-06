@@ -4,7 +4,7 @@ const mksAboutInfo = {
 	video: [
 		{
 			slug: "videoBlock",
-			value: { id: 1, video: require("../images/MksModal/main/ISS.webm")},
+			value: { id: 1, video: require("../images/MksModal/main/ISS.mp4")},
 			
 		},
 	],
@@ -84,7 +84,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/1/1_Zarya.webm")},
+				value: { id: 1, video: require("../images/MksModal/1/1_Zarya.mp4")},
 				
 			},
 		],
@@ -184,7 +184,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/2/2_Unity.webm")},
+				value: { id: 1, video: require("../images/MksModal/2/2_Unity.mp4")},
 				
 			},
 		],
@@ -241,7 +241,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/3/3_Zvezda.webm")},
+				value: { id: 1, video: require("../images/MksModal/3/3_Zvezda.mp4")},
 				
 			},
 		],
@@ -369,7 +369,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/4/4_Destiny.webm")},
+				value: { id: 1, video: require("../images/MksModal/4/4_Destiny.mp4")},
 				
 			},
 		],
@@ -430,7 +430,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/5/5_Quest.webm")},
+				value: { id: 1, video: require("../images/MksModal/5/5_Quest.mp4")},
 				
 			},
 		],
@@ -499,7 +499,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/6/6_Harmony.webm")},
+				value: { id: 1, video: require("../images/MksModal/6/6_Harmony.mp4")},
 				
 			},
 		],
@@ -556,7 +556,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/7/7_Columbus.webm")},
+				value: { id: 1, video: require("../images/MksModal/7/7_Columbus.mp4")},
 				
 			},
 		],
@@ -617,7 +617,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/8/8_KiboLogistics.webm")},
+				value: { id: 1, video: require("../images/MksModal/8/8_KiboLogistics.mp4")},
 				
 			},
 		],
@@ -674,7 +674,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/9/9_KiboLab.webm")},
+				value: { id: 1, video: require("../images/MksModal/9/9_KiboLab.mp4")},
 				
 			},
 		],
@@ -753,7 +753,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/10/10_Poisk.webm")},
+				value: { id: 1, video: require("../images/MksModal/10/10_Poisk.mp4")},
 				
 			},
 		],
@@ -880,7 +880,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/11/11_Tranquility.webm")},
+				value: { id: 1, video: require("../images/MksModal/11/11_Tranquility.mp4")},
 			},
 		],
 		slider: [
@@ -944,7 +944,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/12/12_Cupola.webm")},
+				value: { id: 1, video: require("../images/MksModal/12/12_Cupola.mp4")},
 			},
 		],
 		slider: [
@@ -1008,7 +1008,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/13/13_Rassvet.webm")},
+				value: { id: 1, video: require("../images/MksModal/13/13_Rassvet.mp4")},
 			},
 		],
 		slider: [
@@ -1141,7 +1141,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/14/14_Leonardo.webm")},
+				value: { id: 1, video: require("../images/MksModal/14/14_Leonardo.mp4")},
 			},
 		],
 		slider: [
@@ -1201,7 +1201,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/15/15_NEM.webm")},
+				value: { id: 1, video: require("../images/MksModal/15/15_NEM.mp4")},
 			},
 		],
 		slider: [
@@ -1283,7 +1283,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/16/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/MksModal/16/16_Nauka.mp4")},
 			},
 		],
 		slider: [
@@ -1477,7 +1477,7 @@ const mksStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/MksModal/17/17_Prichal.webm")},
+				value: { id: 1, video: require("../images/MksModal/17/17_Prichal.mp4")},
 			},
 		],
 		slider: [
@@ -1646,7 +1646,7 @@ const scienceAboutInfo = {
 	video: [
 		{
 			slug: "videoBlock",
-			value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+			value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 			
 		},
 	],
@@ -1843,7 +1843,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -1873,7 +1873,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -1903,7 +1903,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -1937,7 +1937,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -1971,7 +1971,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2001,7 +2001,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2031,7 +2031,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2061,7 +2061,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2102,7 +2102,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2132,7 +2132,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2166,7 +2166,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2200,7 +2200,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2234,7 +2234,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
@@ -2264,7 +2264,7 @@ const scienceStructure = [
 		video: [
 			{
 				slug: "videoBlock",
-				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.webm")},
+				value: { id: 1, video: require("../images/ScienceModal/main/16_Nauka.mp4")},
 				
 			},
 		],
