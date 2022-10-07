@@ -5,3 +5,4 @@ export { default as ModalBg } from './modal_bg.png';
 export { default as SpaceshipLeft } from './spaceship_left.png';
 export { default as SpaceshipRight } from './spaceship_right.png';
 export { default as SpaceshipMiddle } from './spaceship_middle.png';
+export { default as PlaceholderImage } from './placeholder_image.png';

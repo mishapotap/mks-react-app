@@ -1,4 +1,5 @@
 .text {
+    position: relative;
     /* width: 800px; */
     /* text */
     font-family: 'Montserrat';

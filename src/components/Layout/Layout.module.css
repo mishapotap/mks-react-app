@@ -8,6 +8,46 @@
     position: absolute;
 }
 
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030d1d;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.placeholderText {
+    padding: 50px 50px;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.placeholderImage {
+    max-width: 80%;
+}
+
+@media (orientation: portrait) {
+    .wrapper {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    .placeholder {
+        display: none;
+    }
+}
+
 .layoutBg {
     position: absolute;
     width: 100%;
