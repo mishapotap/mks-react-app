@@ -3,11 +3,52 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
-    /* width: 1145px; */
-    /* width: 60%; */
-    /* width: fit-content; */
+    /* position */
+    position: absolute;
+    top: 20px;
+    left: auto;
+    z-index: 1;
 }
+.text {
+    white-space: nowrap;
+    margin-right: 3%;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.button {
+    width: fit-content;
+    padding: 0 30px;
+    min-height: 40px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    white-space: nowrap;
+    /* text */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.button:hover  {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    border: 1px solid rgb(65, 124, 212);
+    background-color: rgb(13, 31, 58);
+}
+
 .orbital {
     cursor: pointer;
     margin-right: 3%;
@@ -25,40 +66,4 @@
 .roscosmos:hover {
     transition: all 0.3s;
     transform: scale(1.1);
-}
-.text {
-    margin-right: 3%;
-    /* text */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-}
-.button {
-    width: 253px;
-    height: 32px;
-    border: 1px solid #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    /* text */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    text-align: center;
-    letter-spacing: 0.07em;
-    color: #FFFFFF;
-    transition: all 0.3s;
-}
-.button:hover  {
-    transition: all 0.3s;
-    transform: scale(1.1);
-    border: 1px solid rgb(65, 124, 212);
-    background-color: rgb(13, 31, 58);
 }

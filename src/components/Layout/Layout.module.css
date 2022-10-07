@@ -65,9 +65,10 @@
 
 .buttonWrapper {
     position: absolute;
-    bottom: 3.5%;
+    /* bottom: 3.5%; */
+    bottom: 5%;
     left: auto;
     display: flex;
     justify-content: space-between;
-    width: 26%;
+    /* width: 26%; */
 }

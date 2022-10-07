@@ -3,13 +3,13 @@ import { Mks } from "./screens";
 
 function App() {
 	const initUI = () => {
-		if (window.innerWidth < 700) {
-			document.body.style.zoom = 0.3;
+		if (window.innerWidth < 800) {
+			document.body.style.zoom = 0.42;
 		}
 
-		if (window.innerWidth >= 700 && window.innerWidth < 800) {
-			document.body.style.zoom = 0.4;
-		}
+		// if (window.innerWidth >= 700 && window.innerWidth < 800) {
+		// 	document.body.style.zoom = 0.4;
+		// }
 
 		if (window.innerWidth >= 800 && window.innerWidth < 940) {
 			document.body.style.zoom = 0.45;

@@ -21,9 +21,9 @@ const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
 			</div>
 			<div className={styles.wrapper}>
 				<Video scienceActive={scienceActive} videoContent={videoContent} setVideoContent={setVideoContent}/>
-				<div style={{width: '1200px', position: 'absolute', top: '2%', left: 'auto', zIndex: 1}}>
+				{/* <div style={{position: 'absolute', top: '20px', left: 'auto', zIndex: 1}}> */}
 					<Header onClickHandler={() => window.location.href = "https://agat.avt.promo/"}/>
-				</div>
+				{/* </div> */}
 				<div className={styles.layoutBg}>
 					<LayoutBg />
 				</div>

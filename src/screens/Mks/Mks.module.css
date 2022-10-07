@@ -14,7 +14,7 @@
 
 .structureButton {
     position: absolute;
-    top: 27%;
+    top: calc(15% + 110px);
     left: 3%;
     z-index: 1;
 }
@@ -35,7 +35,7 @@
 
 .videoButton {
     position: absolute;
-    top: 27%;
+    top: calc(15% + 110px);
     right: 3%;
     z-index: 1;
 }
@@ -65,7 +65,7 @@
 
 .soundButton {
     position: absolute;
-    bottom: 24%;
+    bottom: calc(8.5% + 150px);
     right: calc(4% + 32.5px);
     z-index: 1;
     cursor: pointer;

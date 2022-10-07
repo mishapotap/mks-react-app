@@ -9,3 +9,9 @@
     letter-spacing: 0.05em;
     color: #3C70BE;
 }
+
+@media (max-width: 1000px) {
+    .text {
+        margin-bottom: 15px;
+    }
+}

@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 151px;
-    height: 90px;
+    width: 210px;
+    height: 100px;
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
