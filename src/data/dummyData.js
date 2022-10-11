@@ -1063,7 +1063,7 @@ const mksStructure = [
 								value: {
 									"symbol": 'CUPOLA',
 									"start": '08 февраля 2010 г',
-									"finish": '12 февраля 2010 г',
+									"finish": '12 февраля 2021 г',
 								}
 								},
 								{

@@ -1,4 +1,4 @@
-import React, {useState, useLayoutEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, Modal} from '../../components';
 import {Helmet} from "react-helmet";
@@ -13,7 +13,7 @@ const Mks = () => {
   const NAUKA = "#nauka";
   const MKS = "#mks";
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (scienceActive === NAUKA) {
       window.location.hash = "#nauka"
     } else {
@@ -71,10 +71,10 @@ const Mks = () => {
             <iframe id="myIframe" src={scienceActive ? "https://ate2.avt.promo/modelscience/NAUKA.html" : "https://ate2.avt.promo/model/ISS.html"} frameBorder="0"></iframe>
         </div> */}
         <div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>
-            <iframe id="myIframe" title='Mks' src="https://agat.avt.promo/mks/model/ISS.html" frameBorder="0"></iframe>
+            <iframe id="myIframe" title='Mks' src={`${window.location.origin}/mks/model/ISS.html`} frameBorder="0"></iframe>
         </div>
         <div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>
-            <iframe id="scienceIframe" title='Nauka' src="https://agat.avt.promo/mks/modelscience/NAUKA.html" frameBorder="0"></iframe>
+            <iframe id="scienceIframe" title='Nauka' src={`${window.location.origin}/mks/modelscience/NAUKA.html`} frameBorder="0"></iframe>
         </div>
       </Layout>
     </>
