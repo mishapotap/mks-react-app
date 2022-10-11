@@ -1,4 +1,4 @@
-import React, {useState, useLayoutEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, Modal} from '../../components';
 import {Helmet} from "react-helmet";
@@ -14,7 +14,7 @@ const Mks = () => {
   const NAUKA = "#nauka";
   const MKS = "#mks";
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (scienceActive === NAUKA) {
       window.location.hash = "#nauka"
     } else {

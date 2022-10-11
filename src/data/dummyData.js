@@ -1510,7 +1510,7 @@ const mksStructure = [
 								value: {
 									"symbol": 'УМ',
 									"start": '24 ноября 2021 г',
-									"finish": '26 ноября 2010 г',
+									"finish": '26 ноября 2021 г',
 								}
 								},
 								{
