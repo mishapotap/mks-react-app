@@ -10,7 +10,7 @@
     color: #3C70BE;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .text {
         margin-bottom: 15px;
     }

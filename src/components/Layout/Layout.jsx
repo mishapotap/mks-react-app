@@ -22,7 +22,7 @@ const Layout = ({ children, videoContent, setVideoContent, scienceActive }) => {
 			<div className={styles.wrapper}>
 				<Video scienceActive={scienceActive} videoContent={videoContent} setVideoContent={setVideoContent}/>
 				{/* <div style={{position: 'absolute', top: '20px', left: 'auto', zIndex: 1}}> */}
-					<Header onClickHandler={() => window.location.href = "https://agat.avt.promo/"}/>
+					<Header onClickHandler={() => window.location.href = window.location.origin}/>
 				{/* </div> */}
 				<div className={styles.layoutBg}>
 					<LayoutBg />
