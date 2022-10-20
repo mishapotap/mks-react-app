@@ -1,9 +1,9 @@
 import React, {useState, useEffect } from 'react';
-// import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
+import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, Modal} from '../../components';
 import {Helmet} from "react-helmet";
 import styles from "./Mks.module.css";
-// import useAudio from '../../hooks/useAudio';
+import useAudio from '../../hooks/useAudio';
 import { SpaceShip, MksIcon } from '../../images'
 
 
@@ -43,7 +43,7 @@ const Mks = () => {
     modalAudio.play()
   }
   // bg audio
-  // const [playing, toggle] = useAudio("/bg.mp3");
+  const [playing, toggle] = useAudio("/bg.mp3");
   
   
   return (
@@ -75,9 +75,9 @@ const Mks = () => {
         <div className={styles.scienceButton} onClick={() => {playButton(); setScienceActive(NAUKA)}}>
           <CircleButton buttonText={"Наука"} icon={SpaceShip} active={scienceActive === MKS}/>
         </div>
-        {/*<div className={styles.soundButton} onClick={toggle}>*/}
-        {/*  {playing ? <SoundButtonSvg/> : <SoundButtonDisabled/>}*/}
-        {/*</div>*/}
+        <div className={styles.soundButton} onClick={toggle}>
+          {playing ? <SoundButtonSvg/> : <SoundButtonDisabled/>}
+        </div>
         {/* <div className={styles.iframeContainer}>
             <iframe id="myIframe" src={scienceActive ? "https://ate2.avt.promo/modelscience/NAUKA.html" : "https://ate2.avt.promo/model/ISS.html"} frameBorder="0"></iframe>
         </div> */}
