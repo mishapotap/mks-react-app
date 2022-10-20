@@ -1,9 +1,9 @@
 import React, {useState, useEffect } from 'react';
-import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
+// import { SoundButtonSvg, SoundButtonDisabled } from '../../svg';
 import {SquareButton, CircleButton, ScreenTitle, Layout, Modal} from '../../components';
 import {Helmet} from "react-helmet";
 import styles from "./Mks.module.css";
-import useAudio from '../../hooks/useAudio';
+// import useAudio from '../../hooks/useAudio';
 import { SpaceShip, MksIcon } from '../../images'
 
 
@@ -33,8 +33,8 @@ const Mks = () => {
   const [structureContent, setStructureContent] = useState(false);
   const [videoContent, setVideoContent] = useState(false);  
   // bg audio
-  const [playing, toggle] = useAudio("/mks/bg.mp3");
-  
+  // const [playing, toggle] = useAudio("/mks/bg.mp3");
+
   return (
     <>
       <Helmet>
@@ -64,18 +64,18 @@ const Mks = () => {
         <div className={styles.scienceButton} onClick={() => setScienceActive(NAUKA)}>
           <CircleButton buttonText={"Наука"} icon={SpaceShip} active={scienceActive === MKS}/>
         </div>
-        <div className={styles.soundButton} onClick={toggle}>
-          {playing ? <SoundButtonSvg/> : <SoundButtonDisabled/>}
-        </div>
+        {/*<div className={styles.soundButton} onClick={toggle}>*/}
+        {/*  {playing ? <SoundButtonSvg/> : <SoundButtonDisabled/>}*/}
+        {/*</div>*/}
         {/* <div className={styles.iframeContainer}>
             <iframe id="myIframe" src={scienceActive ? "https://ate2.avt.promo/modelscience/NAUKA.html" : "https://ate2.avt.promo/model/ISS.html"} frameBorder="0"></iframe>
         </div> */}
-        <div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>
-            <iframe id="myIframe" title='Mks' src={`${window.location.origin}/mks/model/ISS.html`} frameBorder="0"></iframe>
-        </div>
-        <div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>
-            <iframe id="scienceIframe" title='Nauka' src={`${window.location.origin}/mks/modelscience/NAUKA.html`} frameBorder="0"></iframe>
-        </div>
+        {/*<div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>*/}
+        {/*    <iframe id="myIframe" title='Mks' src={`${window.location.origin}/mks/model/ISS.html`} frameBorder="0"></iframe>*/}
+        {/*</div>*/}
+        {/*<div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>*/}
+        {/*    <iframe id="scienceIframe" title='Nauka' src={`${window.location.origin}/mks/modelscience/NAUKA.html`} frameBorder="0"></iframe>*/}
+        {/*</div>*/}
       </Layout>
     </>
   );
