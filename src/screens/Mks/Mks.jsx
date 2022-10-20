@@ -70,12 +70,12 @@ const Mks = () => {
         {/* <div className={styles.iframeContainer}>
             <iframe id="myIframe" src={scienceActive ? "https://ate2.avt.promo/modelscience/NAUKA.html" : "https://ate2.avt.promo/model/ISS.html"} frameBorder="0"></iframe>
         </div> */}
-        {/*<div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>*/}
-        {/*    <iframe id="myIframe" title='Mks' src={`${window.location.origin}/mks/model/ISS.html`} frameBorder="0"></iframe>*/}
-        {/*</div>*/}
-        {/*<div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>*/}
-        {/*    <iframe id="scienceIframe" title='Nauka' src={`${window.location.origin}/mks/modelscience/NAUKA.html`} frameBorder="0"></iframe>*/}
-        {/*</div>*/}
+        <div className={styles.iframeContainer} style={{visibility: scienceActive === MKS ? "visible" : "hidden"}}>
+            <iframe id="myIframe" title='Mks' src={`${window.location.origin}/mks/model/ISS.html`} frameBorder="0"></iframe>
+        </div>
+        <div className={styles.iframeContainer} style={{visibility: scienceActive === NAUKA ? "visible" : "hidden"}}>
+            <iframe id="scienceIframe" title='Nauka' src={`${window.location.origin}/mks/modelscience/NAUKA.html`} frameBorder="0"></iframe>
+        </div>
       </Layout>
     </>
   );
